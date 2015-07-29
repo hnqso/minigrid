@@ -1,6 +1,6 @@
 {
   "name": "minigrid",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Minimal 2k (842 bytes compressed) dead-simple zero dependency cascading grid layout",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "cascading",
     "layout",
     "javascript",
-    "minimal"
+    "minimal",
+    "responsive"
   ],
   "author": "Henrique Alves <henriquea@gmail.com> (http://alves.im)",
   "license": "MIT",
