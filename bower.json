@@ -1,0 +1,31 @@
+{
+  "name": "minigrid",
+  "main": "index.js",
+  "version": "1.1.0",
+  "homepage": "http://henriquea.github.io/minigrid",
+  "authors": [
+    "Henrique Alves <henriquea@gmail.com>"
+  ],
+  "description": "Minimal 2k (842 bytes compressed) dead-simple zero dependency cascading grid layout",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "layout",
+    "grid",
+    "min",
+    "minimal",
+    "javascript",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
