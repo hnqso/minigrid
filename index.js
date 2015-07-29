@@ -1,6 +1,6 @@
 (function(exports){
 
-  function mingrid(containerSelector, itemSelector, gutter) {
+  function minigrid(containerSelector, itemSelector, gutter) {
     var forEach = Array.prototype.forEach;
     var containerEle = document.querySelector(containerSelector);
     var itemsNodeList = document.querySelectorAll(itemSelector);
@@ -47,11 +47,11 @@
   }
 
   if (typeof define === 'function' && define.amd) {
-    define(function() { return mingrid; });
+    define(function() { return minigrid; });
   } else if (typeof module !== 'undefined' && module.exports) {
-    module.exports = mingrid;
+    module.exports = minigrid;
   } else {
-    exports.mingrid = mingrid;
+    exports.minigrid = minigrid;
   }
 
 })(this);
