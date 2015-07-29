@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {font-size: 0.813em;}
+
+body {
+  background-color: white;
+  font-family: 'Source Code Pro', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #37474F;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.602em;
+}
+
+h2 {font-size: 1.424em;}
+
+h3 {font-size: 1.266em;}
+
+h4 {font-size: 1.125em;}
+
+small, .font_small {font-size: 0.889em;}
+
+a {
+  text-decoration: none;
+  color: #536DFE;
+  border-bottom: solid 2px #8C9EFF;
+}
+
+.hero {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 700px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h1 a {
+  border-bottom: 0;
+}
+
+.hljs {
+  font-family: 'Source Code Pro', serif;
+}
+
+.copyright {
+  padding: 50px 0;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="highlight/styles/github.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="demo.css" type="text/css">
+    <title>minigrid by @healves82</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero">
+        <div class="content">
+          <h1><a href="/">minigrid()</a></h1>
+          <h4>Minimal 2k (842 bytes compressed) zero dependency cascading grid layout.</h4>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="grid">
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item" style="height: 245px;"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item" style="height: 290px;"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item" style="height: 140px;"></div>
+          <div class="grid-item" style="height: 200px"></div>
+          <div class="grid-item" style="height: 150px"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item" style="height: 220px"></div>
+          <div class="grid-item" style="height: 205px"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          <div class="grid-item"></div>
+          
+        </div>
+      </div>
+      <div class="install section">
+        <div class="content">
+          <h2>Install</h2>
+          <p><pre><code class="javascript">npm install minigrid</code></pre></p>
+        </div>
+        <div class="content">
+          <h2>Usage</h2>
+          <p>For the follow HTML:</p>
+          <p><pre><code class="html">&lt;div class="grid"&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+  &lt;div class="grid-item"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></p>
+          <p><pre><code class="javascript">var grid = require('minigrid');
+grid('.grid', '.grid-item');</code></pre></p>
+          <p>Please check the <a href="https://github.com/henriquea/minigrid#readme">README</a> for more information.</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="content">
+          <p><small>MIT License (c) 2015 by <a href="http://twitter.com/healves82">Henrique Alves</a>.</small></p>
+        </div>
+      </div>
+    </div>
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="minigrid.js"></script>
+    <script>
+      (function(){
+        minigrid('.grid', '.grid-item');
+      })();
+    </script>
+  </body>
+</html>
