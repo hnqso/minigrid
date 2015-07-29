@@ -5,7 +5,13 @@ Minimal 2k (842 bytes compressed) zero dependency cascading grid layout.
 
 ## Install
 
+For node:
+
 `npm install minigrid`
+
+Or for the browser:
+
+`bower install minigrid`
 
 ## Usage
 
