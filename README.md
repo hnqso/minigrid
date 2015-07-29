@@ -40,6 +40,16 @@ Then set `position`, `top` and `left` to your grid items.
 - **itemSelector** - `string`
 - **gutter** - `number`: gutter between items, default is `6`
 
+## Responsiveness
+
+minigrid is dead-simple and doesn't provide anything in-the-box however you can achieve this easily by doing:
+
+```js
+window.addEventListener('resize', function(){
+  minigrid('.grid', '.grid-item');
+});
+```
+
 ## License
 
 MIT &copy; 2015 [Henrique Alves](http://twitter.com/healves82)
