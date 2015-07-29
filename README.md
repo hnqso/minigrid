@@ -1,6 +1,8 @@
 # minigrid
 Minimal 2k (842 bytes compressed) zero dependency cascading grid layout.
 
+**[Demo, please](http://henriquea.github.io/minigrid/)**
+
 ## Install
 
 `npm install minigrid`
@@ -40,4 +42,4 @@ Then set `position`, `top` and `left` to your grid items.
 
 ## License
 
-MIT &copy; 2015 [Henrique Alves](http://alves.im)
+MIT &copy; 2015 [Henrique Alves](http://twitter.com/healves82)
