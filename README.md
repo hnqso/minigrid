@@ -9,7 +9,7 @@ Minimal 2k (842 bytes compressed) dead-simple zero dependency cascading grid lay
 
 ```js
 var grid = require('minigrid');
-minigrid('.grid', '.grid-item');
+grid('.grid', '.grid-item');
 ```
 
 First to avoid weird stuff to happen, I'd suggest set `position: relative` in your main container.
@@ -32,11 +32,11 @@ Then set `position`, `top` and `left` to your grid items.
 
 ## API
 
-### minigrid(containerSelector, itemSelector, gutter);
+#### minigrid(containerSelector, itemSelector, gutter);
 
 - **containerSelector** - `string`
 - **itemSelector** - `string`
-- **gutter** - `number`
+- **gutter** - `number`: gutter between items, default is `6`
 
 ## License
 
