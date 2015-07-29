@@ -1,6 +1,6 @@
 {
   "name": "minigrid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal 2k (842 bytes compressed) dead-simple zero dependency cascading grid layout",
   "main": "index.js",
   "scripts": {
