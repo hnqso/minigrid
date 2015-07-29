@@ -53,12 +53,14 @@
 &lt;/div&gt;</code></pre></p>
           <p><pre><code class="javascript">var grid = require('minigrid');
 grid('.grid', '.grid-item');</code></pre></p>
+          <h2>Responsiveness</h2>
+          <p>minigrid is dead-simple and doesn't provide anything in-the-box however you can achieve this easily by doing:</p>
+          <p><pre><code class="javascript">window.addEventListener('resize', function(){
+  minigrid('.grid', '.grid-item');
+});</code></pre></p>
           <p>Please check the <a href="https://github.com/henriquea/minigrid#readme">README</a> for more information.</p>
-        </div>
-      </div>
-      <div class="copyright">
-        <div class="content">
           <p><small>MIT License (c) 2015 by <a href="http://twitter.com/healves82">Henrique Alves</a>.</small></p>
+          <p>&nbsp;</p>
         </div>
       </div>
     </div>
@@ -72,6 +74,9 @@ grid('.grid', '.grid-item');</code></pre></p>
           var d = document.querySelector('.demo');
           d.style.opacity = 1;
         }, 50);
+        window.addEventListener('resize', function(){
+          minigrid('.grid', '.grid-item');
+        });
       })();
     </script>
   </body>
