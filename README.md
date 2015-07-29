@@ -1,7 +1,7 @@
 # minigrid
 Minimal 2k (842 bytes compressed) zero dependency cascading grid layout.
 
-**[Demo, please](http://henriquea.github.io/minigrid/)**
+**[Demo](http://henriquea.github.io/minigrid/)**
 
 ## Install
 
@@ -49,6 +49,20 @@ window.addEventListener('resize', function(){
   minigrid('.grid', '.grid-item');
 });
 ```
+
+[Demo](http://output.jsbin.com/maroda/1/)
+
+## Animation
+
+Using CSS `transition` you can apply it to the grid item e.g.
+
+```css
+.grid-item {
+  transition: .3s ease-in-out;
+}
+```
+
+[Demo](http://output.jsbin.com/maroda/3/)
 
 ## License
 
