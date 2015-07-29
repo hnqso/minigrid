@@ -1,5 +1,5 @@
 # minigrid
-Minimal 2k (842 bytes compressed) dead-simple zero dependency cascading grid layout.
+Minimal 2k (842 bytes compressed) zero dependency cascading grid layout.
 
 ## Install
 
@@ -12,7 +12,7 @@ var grid = require('minigrid');
 grid('.grid', '.grid-item');
 ```
 
-First to avoid weird stuff to happen, I'd suggest set `position: relative` in your main container.
+To avoid weird stuff to happen I'd suggest set `position: relative` in your main container.
 
 ```css
 .grid {
