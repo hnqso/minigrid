@@ -68,6 +68,10 @@ grid('.grid', '.grid-item');</code></pre></p>
     <script>
       (function(){
         minigrid('.grid', '.grid-item');
+        setTimeout(function(){
+          var d = document.querySelector('.demo');
+          d.style.opacity = 1;
+        }, 50);
       })();
     </script>
   </body>
