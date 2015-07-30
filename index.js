@@ -1,16 +1,15 @@
 (function(exports){
 
-  function minigrid(containerSelector, itemSelector, gutter, done) {
+  function minigrid(containerSelector, itemSelector, gutter, animate, done) {
     var forEach = Array.prototype.forEach;
     var containerEle = document.querySelector(containerSelector);
     var itemsNodeList = document.querySelectorAll(itemSelector);
     gutter = gutter || 6;
-
     containerEle.style.width = '';
-
     var containerWidth = containerEle.getBoundingClientRect().width;
     var firstChildWidth = itemsNodeList[0].getBoundingClientRect().width + gutter;
     var cols = Math.max(Math.floor((containerWidth - gutter) / firstChildWidth), 1);
+    var count = 0;
     containerWidth = (firstChildWidth * cols + gutter) + 'px';
     containerEle.style.width = containerWidth;
     
@@ -33,9 +32,14 @@
         'OTransform', 
         'transform'
       ];
-      forEach.call(transformProps, function(transform){
-        item.style[transform] = 'translate(' + posX + 'px,' + posY + 'px)';
-      });
+      count = count + 1;
+      if (!animate) {
+        forEach.call(transformProps, function(transform){
+          item.style[transform] = 'translate(' + posX + 'px,' + posY + 'px)';
+        });  
+      } else {
+        return animate(item, posX, posY, count);
+      }
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
     });
 
@@ -45,7 +49,7 @@
 
     containerEle.style.height = containerHeight + 'px';
 
-    if (typeof done === 'function') {
+    if (typeof done === 'function'){
       done();
     }
   }

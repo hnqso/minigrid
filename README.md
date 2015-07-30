@@ -49,12 +49,24 @@ That's it!
 
 ## API
 
-#### minigrid(containerSelector, itemSelector, gutter, done);
+### `minigrid(containerSelector, itemSelector, gutter, animate, done)`
 
 - **containerSelector** - `string`: required.
 - **itemSelector** - `string`: required.
 - **gutter** - `number`: gutter between items, default is `6`.
+- **animate** - `function`: optional.
 - **done** - `function`: optional. Called after the grid was updated.
+
+#### `animate`
+
+It returns a function with the `element`,`x`,`y` and `index` for each grid item.
+
+```js
+function animate(el, x, y, index) {
+  // Use your favourite library for animate the element
+}
+minigrid('.grid', '.grid-item', 6, animate);
+```
 
 ## Responsiveness
 
@@ -70,7 +82,7 @@ window.addEventListener('resize', function(){
 
 ## Animation
 
-You can applay CSS `transition` to the grid items e.g.
+You can either add a CSS `transition` to your grid item:
 
 ```css
 .grid-item {
@@ -79,6 +91,25 @@ You can applay CSS `transition` to the grid items e.g.
 ```
 
 [Demo](http://output.jsbin.com/maroda/3/)
+
+Or take it to the next level. The example bellow is using the awesome Dynamics.js library:
+
+```js
+function animate(item, x, y, index) {
+  dynamics.animate(item, {
+    translateX: x,
+    translateY: y
+  }, {
+    type: dynamics.spring,
+    duration: 800,
+    frequency: 120,
+    delay: 100 + index * 30
+  });
+}
+
+minigrid('.grid', '.grid-item', 6, animate);
+```
+[Demo](http://output.jsbin.com/maroda/4/)
 
 ## License
 
