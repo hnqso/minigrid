@@ -2,6 +2,7 @@
   position: relative;
   opacity: 0;
   transition: .2s ease;
+  margin-bottom: 60px;
 }
 
 .grid {
