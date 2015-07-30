@@ -15,6 +15,15 @@ Or for the browser:
 
 ## Usage
 
+```html
+<div class="grid">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+```
+
 ```js
 var grid = require('minigrid');
 grid('.grid', '.grid-item');
