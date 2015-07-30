@@ -26,3 +26,13 @@
    background-color: #536DFE;
    /* end fluffy */
 }
+
+/* mq */
+
+@media (max-width: 600px) {
+  .grid-item {
+    width: 120px;
+    height: 80px;
+  }
+}
+
