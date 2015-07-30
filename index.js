@@ -32,15 +32,16 @@
         'OTransform', 
         'transform'
       ];
-      count = count + 1;
       if (!animate) {
         forEach.call(transformProps, function(transform){
           item.style[transform] = 'translate(' + posX + 'px,' + posY + 'px)';
         });  
-      } else {
-        return animate(item, posX, posY, count);
       }
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
+      count = count + 1;
+      if (animate) {
+        return animate(item, posX, posY, count);
+      }
     });
 
     var containerHeight = itemsGutter.slice(0).sort(function (a, b) {
