@@ -1,6 +1,6 @@
 (function(exports){
 
-  function minigrid(containerSelector, itemSelector, gutter) {
+  function minigrid(containerSelector, itemSelector, gutter, done) {
     var forEach = Array.prototype.forEach;
     var containerEle = document.querySelector(containerSelector);
     var itemsNodeList = document.querySelectorAll(itemSelector);
@@ -44,6 +44,10 @@
     }).pop();
 
     containerEle.style.height = containerHeight + 'px';
+
+    if (typeof done === 'function') {
+      done();
+    }
   }
 
   if (typeof define === 'function' && define.amd) {
