@@ -92,7 +92,7 @@ You can either add a CSS `transition` to your grid item:
 
 [Demo](http://output.jsbin.com/maroda/3/)
 
-Or take it to the next level. The example bellow is using the awesome Dynamics.js library:
+Or take it to the next level. The example bellow is using the awesome [Dynamics.js](http://dynamicsjs.com) library:
 
 ```js
 function animate(item, x, y, index) {
