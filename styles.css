@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+/*@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);*/
 
 *, *:after, *:before {
   box-sizing: border-box;
@@ -41,16 +41,43 @@ h4 {font-size: 1.125em;}
 
 small, .font_small {font-size: 0.889em;}
 
+/* layout */
+
 a {
   text-decoration: none;
   color: #536DFE;
   border-bottom: solid 2px #8C9EFF;
 }
 
+.info-bar {
+  padding: 12px;
+  border-bottom: solid 1px #CFD8DC;
+}
+
+.foo {
+  margin-top: calc(1.414em * 2);
+  border-bottom: 0;
+  border-top: solid 1px #CFD8DC;
+}
+
+.info-bar a {
+  border-bottom: 0;
+}
+
+.info-bar .link {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.info-bar .madeby {
+  float: right;
+  display: inline-block;
+}
+
 .hero {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 30px;
+  padding: calc(1.414em * 4) 0;
   text-align: center;
 }
 
