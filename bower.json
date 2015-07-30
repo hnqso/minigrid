@@ -1,12 +1,12 @@
 {
   "name": "minigrid",
   "main": "index.js",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "http://henriquea.github.io/minigrid",
   "authors": [
     "Henrique Alves <henriquea@gmail.com>"
   ],
-  "description": "Minimal 2k (842 bytes compressed) dead-simple zero dependency cascading grid layout",
+  "description": "Minimal 2k zero dependency cascading grid layout",
   "moduleType": [
     "amd",
     "globals",
