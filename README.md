@@ -109,7 +109,7 @@ function animate(item, x, y, index) {
 
 minigrid('.grid', '.grid-item', 6, animate);
 ```
-[Demo](http://output.jsbin.com/maroda/4/)
+[Demo](http://output.jsbin.com/maroda/6/)
 
 ## License
 
