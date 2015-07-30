@@ -1,5 +1,5 @@
 # minigrid
-Minimal 2k (842 bytes compressed) zero dependency cascading grid layout.
+Minimal 2k zero dependency cascading grid layout.
 
 **[Demo](http://henriquea.github.io/minigrid/)**
 
@@ -28,27 +28,28 @@ To avoid weird stuff to happen I'd suggest set `position: relative` in your main
 }
 ```
 
-Then set `position`, `top` and `left` to your grid items.
+Then set `position: absolute` to your grid items.
 
 ```css
 .grid-item {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 ```
 
+That's it!
+
 ## API
 
-#### minigrid(containerSelector, itemSelector, gutter);
+#### minigrid(containerSelector, itemSelector, gutter, callback);
 
-- **containerSelector** - `string`
-- **itemSelector** - `string`
+- **containerSelector** - `string`: required
+- **itemSelector** - `string`: required
 - **gutter** - `number`: gutter between items, default is `6`
+- **callback** - `function`: optional
 
 ## Responsiveness
 
-minigrid is dead-simple and doesn't provide anything in-the-box however you can achieve this easily by doing:
+minigrid is dead-simple and doesn't provide anything in-the-box but you can do:
 
 ```js
 window.addEventListener('resize', function(){
@@ -60,7 +61,7 @@ window.addEventListener('resize', function(){
 
 ## Animation
 
-Using CSS `transition` you can apply it to the grid item e.g.
+You can applay CSS `transition` to the grid items e.g.
 
 ```css
 .grid-item {
