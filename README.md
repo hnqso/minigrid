@@ -1,5 +1,5 @@
 # minigrid
-Minimal 2k zero dependency cascading grid layout.
+Minimal 2kb zero dependency cascading grid layout.
 
 **[Demo](http://henriquea.github.io/minigrid/)**
 

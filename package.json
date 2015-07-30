@@ -1,7 +1,7 @@
 {
   "name": "minigrid",
   "version": "1.2.0",
-  "description": "Minimal 2k zero dependency cascading grid layout",
+  "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
