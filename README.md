@@ -40,12 +40,12 @@ That's it!
 
 ## API
 
-#### minigrid(containerSelector, itemSelector, gutter, callback);
+#### minigrid(containerSelector, itemSelector, gutter, done);
 
-- **containerSelector** - `string`: required
-- **itemSelector** - `string`: required
-- **gutter** - `number`: gutter between items, default is `6`
-- **callback** - `function`: optional
+- **containerSelector** - `string`: required.
+- **itemSelector** - `string`: required.
+- **gutter** - `number`: gutter between items, default is `6`.
+- **done** - `function`: optional. Called after the grid was updated.
 
 ## Responsiveness
 
