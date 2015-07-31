@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 
 *, *:after, *:before {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {font-size: 0.813em;}
 
 body {
   background-color: white;
-  font-family: 'Source Code Pro', serif;
+  font-family: 'Source Sans Pro', serif;
   font-weight: 400;
   line-height: 1.45;
   color: #37474F;
