@@ -5,11 +5,9 @@ Minimal 2kb zero dependency cascading grid layout.
 
 ## Install
 
-For node:
-
 `npm install minigrid`
 
-Or for the browser:
+Using Bower:
 
 `bower install minigrid`
 
@@ -45,17 +43,15 @@ Then set `position: absolute` to your grid items.
 }
 ```
 
-That's it!
-
 ## API
 
 ### `minigrid(containerSelector, itemSelector, gutter, animate, done)`
 
-- **containerSelector** - `string`: required.
-- **itemSelector** - `string`: required.
-- **gutter** - `number`: gutter between items, default is `6`.
+- **containerSelector** - `string`: required. The element selector where your grid items sit.
+- **itemSelector** - `string`: required. The grid item element selector.
+- **gutter** - `number`: optional. The space between items, the default is `6`.
 - **animate** - `function`: optional.
-- **done** - `function`: optional. Called after the grid was updated.
+- **done** - `function`: optional. Callback called after the grid was updated.
 
 #### `animate`
 
@@ -82,7 +78,7 @@ window.addEventListener('resize', function(){
 
 ## Animation
 
-You can either add a CSS `transition` to your grid item:
+The simple solution is to add a CSS `transition` in your grid item:
 
 ```css
 .grid-item {
@@ -92,7 +88,7 @@ You can either add a CSS `transition` to your grid item:
 
 [Demo](http://output.jsbin.com/maroda/3/)
 
-Or take it to the next level. The example bellow is using the awesome [Dynamics.js](http://dynamicsjs.com) library:
+Or take it to the next level by using your favourite library. The example bellow is using the awesome [Dynamics.js](http://dynamicsjs.com) library:
 
 ```js
 function animate(item, x, y, index) {
