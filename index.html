@@ -58,14 +58,12 @@
       <div class="install section">
         <div class="content">
           <h2>Install</h2>
-          <p>For node:</p>
           <p><pre><code class="javascript">npm install minigrid</code></pre></p>
-          <p>For browser:</p>
+          <p>Using Bower:</p>
           <p><pre><code class="javascript">bower install minigrid</code></pre></p>
         </div>
         <div class="content">
           <h2>Usage</h2>
-          <p>For the follow HTML:</p>
           <p><pre><code class="html">&lt;div class="grid"&gt;
   &lt;div class="grid-item"&gt;&lt;/div&gt;
   &lt;div class="grid-item"&gt;&lt;/div&gt;
@@ -84,16 +82,16 @@ grid('.grid', '.grid-item');</code></pre></p>
   // all good!
 });</code></pre></p>
           <h2>Responsiveness</h2>
-          <p>minigrid is dead-simple and doesn't provide anything in-the-box however you can achieve this easily by doing:</p>
+          <p>minigrid is dead-simple and doesn't provide anything in-the-box but you can do:</p>
           <p><pre><code class="javascript">window.addEventListener('resize', function(){
   minigrid('.grid', '.grid-item');
 });</code></pre></p>
           <h2>Animation</h2>
-          <p>You can either add the CSS transition to your grid item:</p>
+          <p>The simple solution is to add a CSS `transition` in your grid item:</p>
           <p><pre><code class="css">.grid-item {
   transition: .3s ease-in-out;
 }</code></pre></p>
-          <p>Or take it to the next level. The example bellow is using the awesome <a href="http://dynamicsjs.com/">Dynamics.js</a> library:
+          <p>Or take it to the next level by using your favourite library. The example bellow is using the awesome <a href="http://dynamicsjs.com/">Dynamics.js</a> library:
           <p><pre><code class="javascript">function animate(item, x, y, index) {
   dynamics.animate(item, {
     translateX: x,
