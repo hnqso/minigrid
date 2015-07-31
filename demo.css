@@ -1,8 +1,10 @@
 .demo {
+  margin: 0 auto;
   position: relative;
   opacity: 0;
   transition: .2s ease;
   margin-bottom: 60px;
+  max-width: 842px;
 }
 
 .grid {
@@ -27,12 +29,28 @@
    /* end fluffy */
 }
 
+/* just playing with the height */
+.grid-item.a { height: 245px; }
+.grid-item.b { height: 290px; }
+.grid-item.c { height: 140px; }
+.grid-item.d { height: 200px; }
+.grid-item.e { height: 150px; }
+.grid-item.f { height: 220px; }
+.grid-item.g { height: 205px; }
+
 /* mq */
 
 @media (max-width: 600px) {
   .grid-item {
-    width: 120px;
+    width: 110px;
     height: 80px;
   }
+  .grid-item.a { height: 205px; }
+  .grid-item.b { height: 210px; }
+  .grid-item.c { height: 100px; }
+  .grid-item.d { height: 160px; }
+  .grid-item.e { height: 110px; }
+  .grid-item.f { height: 180px; }
+  .grid-item.g { height: 135px; }
 }
 
