@@ -27,7 +27,15 @@ var grid = require('minigrid');
 grid('.grid', '.grid-item');
 ```
 
-To avoid weird stuff to happen I'd suggest set `position: relative` in your main container.
+Set `position: absolute` to your grid items.
+
+```css
+.grid-item {
+  position: absolute;
+}
+```
+
+For best practices set `position: relative` in your main container.
 
 ```css
 .grid {
@@ -35,13 +43,6 @@ To avoid weird stuff to happen I'd suggest set `position: relative` in your main
 }
 ```
 
-Then set `position: absolute` to your grid items.
-
-```css
-.grid-item {
-  position: absolute;
-}
-```
 
 ## API
 
@@ -109,4 +110,4 @@ minigrid('.grid', '.grid-item', 6, animate);
 
 ## License
 
-MIT &copy; 2015 [Henrique Alves](http://twitter.com/healves82)
+MIT &copy; 2015 [Henrique Alves](http://alves.im)
