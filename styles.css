@@ -110,3 +110,9 @@ h1 a {
 .octocat-button a {
   border-bottom: 0;
 }
+
+.icon-arrow {
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: -1px;
+}
