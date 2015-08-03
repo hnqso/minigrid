@@ -27,23 +27,6 @@ var grid = require('minigrid');
 grid('.grid', '.grid-item');
 ```
 
-Set `position: absolute` to your grid items.
-
-```css
-.grid-item {
-  position: absolute;
-}
-```
-
-For best practices set `position: relative` in your main container.
-
-```css
-.grid {
-  position: relative;
-}
-```
-
-
 ## API
 
 ### `minigrid(containerSelector, itemSelector, gutter, animate, done)`
