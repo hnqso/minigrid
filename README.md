@@ -91,6 +91,10 @@ minigrid('.grid', '.grid-item', 6, animate);
 ```
 [Demo](http://output.jsbin.com/maroda/7/)
 
+## Contributing
+
+Please [submit a new issue](https://github.com/henriquea/minigrid/issues) before drop a PR. I do have a few things in mind. I'm trying to keep the flow and the API as simple as possible.
+
 ## License
 
 MIT &copy; 2015 [Henrique Alves](http://alves.im)
