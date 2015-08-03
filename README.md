@@ -1,7 +1,8 @@
-# minigrid
-Minimal 2kb zero dependency cascading grid layout.
+![icon](http://alves.im/minigrid/assets/favicon-32x32.png)
 
-**[Demo](http://henriquea.github.io/minigrid/)**
+Minigrid is a minimal 2kb zero dependency cascading grid layout.
+
+**[Demo](http://alves.im/minigrid/)**
 
 ## Install
 
