@@ -2,7 +2,7 @@
 
 Minigrid is a minimal 2kb zero dependency cascading grid layout.
 
-**[Demo](http://henriquea.github.io/minigrid/)**
+**[Demo](http://alves.im/minigrid/)**
 
 ## Install
 
