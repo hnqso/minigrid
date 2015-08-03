@@ -1,27 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400);
 
-*, *:after, *:before {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-html {font-size: 0.813em;}
+html {font-size: 1em;}
 
 body {
   background-color: white;
-  font-family: 'Source Sans Pro', serif;
-  font-weight: 400;
+  font-family: 'nimbus-sans', 'Helvetica Neue', arial, sans-serif;
+  font-weight: 300;
   line-height: 1.45;
-  color: #37474F;
+  color: #333;
 }
 
-p {margin-bottom: 1.414em;}
+/*p {margin-bottom: 1.3em;}*/
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
@@ -42,11 +32,27 @@ h4 {font-size: 1.125em;}
 
 small, .font_small {font-size: 0.889em;}
 
+.logo { font-weight: 700; }
+
+
 /* layout */
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 a {
   text-decoration: none;
   color: #536DFE;
+}
+
+.brand {
+  display: block;
+  background-image: url(images/minigrid-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  padding-top: 1.2em;
 }
 
 .info-bar {
@@ -97,6 +103,8 @@ h1 a {
 
 .hljs {
   font-family: 'Source Code Pro', serif;
+  font-size: 0.83em;
+  font-weight: 400;
 }
 
 .copyright {

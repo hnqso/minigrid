@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="demo.css" type="text/css">
     <title>minigrid: minimal 2kb cascading grid layout | made by @healves82</title>
+
+    <script src="//use.typekit.net/omg3pif.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,9 +34,8 @@
       </div>
       <div class="hero">
         <div class="content">
-          <h1><a href="/minigrid/">minigrid</a></h1>
-          <h4>Minimal 2kb zero dependency cascading grid layout.</h4>
-          <div class="octocat-button" data-repo="henriquea/minigrid" data-icon-size="22" data-icon-color="#536DFE" data-text-color="#536DFE" data-font-size="13px"></div>
+          <h4 class="logo"><a href="/minigrid/" class="brand">minigrid</a></h4>
+          <p>Minimal 2kb zero dependency cascading grid layout.</p>
         </div>
       </div>
       <div class="demo">
@@ -55,13 +57,13 @@
       </div>
       <div class="install section">
         <div class="content">
-          <h2>Install</h2>
+          <h3>Install</h3>
           <p><pre><code class="javascript">npm install minigrid</code></pre></p>
           <p>Using Bower:</p>
           <p><pre><code class="javascript">bower install minigrid</code></pre></p>
         </div>
         <div class="content">
-          <h2>Usage</h2>
+          <h3>Usage</h3>
           <p><pre><code class="html">&lt;div class="grid"&gt;
   &lt;div class="grid-item"&gt;&lt;/div&gt;
   &lt;div class="grid-item"&gt;&lt;/div&gt;
@@ -70,13 +72,13 @@
 &lt;/div&gt;</code></pre></p>
           <p><pre><code class="javascript">var grid = require('minigrid');
 grid('.grid', '.grid-item');</code></pre></p>
-          <h2>Responsiveness</h2>
+          <h3>Responsiveness</h3>
           <p>minigrid is dead-simple and doesn't provide anything in-the-box but you can do:</p>
           <p><pre><code class="javascript">window.addEventListener('resize', function(){
   minigrid('.grid', '.grid-item');
 });</code></pre></p>
           <p><a href="http://output.jsbin.com/maroda/1/">Demo <span class="icon-arrow">&#10141;</span></a></p>
-          <h2>Animation</h2>
+          <h3>Animation</h3>
           <p>The simple solution is to add a CSS `transition` in your grid item:</p>
           <p><pre><code class="css">.grid-item {
   transition: .3s ease-in-out;
@@ -96,7 +98,7 @@ grid('.grid', '.grid-item');</code></pre></p>
 
 minigrid('.grid', '.grid-item', 6, animate);</code></pre></p>
           <p><a href="http://output.jsbin.com/maroda/7/">Demo <span class="icon-arrow">&#10141;</span></a></p>
-          <h2>More</h2>
+          <h3>More</h3>
           <p>Please check the <a href="https://github.com/henriquea/minigrid#readme">README</a> for more information.</p>
         </div>
       </div>
@@ -120,13 +122,6 @@ minigrid('.grid', '.grid-item', 6, animate);</code></pre></p>
     </script>
     <script src="highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script>
-      (function(){var e=document.querySelector(".octocat-button"),b=document.createElement("a"),h=e.getAttribute("data-icon-color")||"#424242",f=e.getAttribute("data-icon-size")||"25",k=e.getAttribute("data-font-color")||"#424242",l=e.getAttribute("data-repo"),g=e.getAttribute("data-font-size"),m=g?g:f/1.61803398875+"px";(function(){var c="https://api.github.com/repos/"+l,d=document.createElement("script");d.src=c+"?callback=callback";document.body.appendChild(d);b.href="#";b.style.display="inline-block";
-      b.style.opacity=0;b.style.webkitUserSelect="none";b.style.userSelect="none";b.style.textDecoration="none";b.style.transition=".3s ease";b.webkitTransformStyle="preserve-3d";b.webkitBackfaceVisibility="hidden";e.appendChild(b);c=document.createElement("div");c.classList.add("gh-logo");c.style.verticalAlign="middle";c.style.display="inline-block";b.appendChild(c);d=document.createElementNS("http://www.w3.org/2000/svg","svg");d.setAttributeNS(null,"width",f);d.setAttributeNS(null,"height",parseInt(f-
-      1));d.setAttributeNS(null,"viewBox","0 0 24 23");var a=document.createElementNS(d.namespaceURI,"path");a.setAttributeNS(null,"d","M12 0C5.372 0 0 5.28 0 11.79 0 17 3.438 21.42 8.207 22.98c.6.108.82-.256.82-.57 0-.28-.012-1.02-.018-2.004-3.338.712-4.043-1.58-4.043-1.58C4.42 17.462 3.635 17.1 3.635 17.1c-1.09-.73.082-.717.082-.717 1.205.084 1.838 1.216 1.838 1.216 1.07 1.8 2.81 1.28 3.493.978.11-.76.42-1.28.762-1.576-2.665-.297-5.467-1.31-5.467-5.827 0-1.287.468-2.34 1.236-3.164-.125-.297-.537-1.497.117-3.12 0 0 1.007-.317 3.3 1.21.956-.263 1.983-.393 3.003-.398 1.02.005 2.046.135 3.005.397 2.29-1.527 3.296-1.21 3.296-1.21.656 1.623.244 2.823.12 3.12.77.824 1.234 1.878 1.234 3.165 0 4.53-2.806 5.526-5.478 5.818.43.364.814 1.084.814 2.184 0 1.576-.015 2.847-.015 3.234 0 .316.217.683.825.568 4.765-1.562 8.2-5.98 8.2-11.187C24 5.28 18.627 0 12 0");
-      a.setAttributeNS(null,"fill",h);a.setAttributeNS(null,"fill-rule","evenodd");a.setAttributeNS(null,"class","gh-logo");d.appendChild(a);c.appendChild(d)})();this.callback=function(c){if("object"===typeof c.data){var d=c.data.stargazers_count,a=document.createElement("div");a.style.display="inline-block";a.style.webkitUserSelect="none";a.style.userSelect="none";a.style.color=k;a.style.fontSize=m;a.style.padding="0px 0px 0px 0.5em";a.style.verticalAlign="0px";a.classList.add("gh-stargazers");a.innerHTML=
-      'Star project &nbsp;<span style="color: #9E9E9E">'+d+"</span>";b.href=c.data.html_url;b.appendChild(a);b.style.opacity=1}}})(this);
-    </script>
     <script src="minigrid.js"></script>
     <script>
       (function(){
