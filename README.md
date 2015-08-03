@@ -1,4 +1,4 @@
-# minigrid
+# minigrid [![CodeHunt.io](https://img.shields.io/badge/vote-codehunt.io-02AFD1.svg)](http://codehunt.io/sub/minigrid/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  
 Minimal 2kb zero dependency cascading grid layout.
 
 **[Demo](http://henriquea.github.io/minigrid/)**
