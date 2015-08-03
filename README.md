@@ -1,7 +1,6 @@
 ![icon](http://alves.im/minigrid/assets/favicon-32x32.png)
 
-# minigrid
-Minimal 2kb zero dependency cascading grid layout.
+Minigrid is a minimal 2kb zero dependency cascading grid layout.
 
 **[Demo](http://henriquea.github.io/minigrid/)**
 
