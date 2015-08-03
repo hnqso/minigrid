@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/*p {margin-bottom: 1.3em;}*/
+p {margin-bottom: 1.3em;}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
@@ -61,7 +61,7 @@ a {
 }
 
 .foo {
-  margin-top: calc(1.414em * 2);
+  margin-top: calc(1.414em * 4);
   border-bottom: 0;
   border-top: solid 1px #CFD8DC;
 }
@@ -123,4 +123,32 @@ h1 a {
   display: inline-block;
   margin-left: 2px;
   vertical-align: -1px;
+}
+
+
+.icon-headline {
+  text-align: center;
+  padding: calc(1.414em * 2) 0;
+  background-repeat: no-repeat;
+  background-position: center calc(1.614em);
+}
+
+.icon-headline.install {
+  background-image: url(images/icon-install.svg);
+}
+
+.icon-headline.usage {
+  background-image: url(images/icon-usage.svg);
+}
+
+.icon-headline.responsive {
+  background-image: url(images/icon-responsive.svg);
+}
+
+.icon-headline.animation {
+  background-image: url(images/icon-animation.svg);
+}
+
+.icon-headline.more {
+  background-image: url(images/icon-more.svg);
 }
