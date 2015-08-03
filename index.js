@@ -12,6 +12,7 @@
     var count = 0;
     containerWidth = (firstChildWidth * cols + gutter) + 'px';
     containerEle.style.width = containerWidth;
+    containerEle.style.position = 'relative';
     
     for (var itemsGutter = [], itemsPosX = [], g = 0; g < cols; g++) {
       itemsPosX.push(g * firstChildWidth + gutter);
@@ -32,7 +33,7 @@
         'OTransform', 
         'transform'
       ];
-      item.style['position'] = 'absolute';
+      item.style.position = 'absolute';
       if (!animate) {
         forEach.call(transformProps, function(transform){
           item.style[transform] = 'translate(' + posX + 'px,' + posY + 'px)';
