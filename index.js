@@ -32,6 +32,7 @@
         'OTransform', 
         'transform'
       ];
+      item.style['position'] = 'absolute';
       if (!animate) {
         forEach.call(transformProps, function(transform){
           item.style[transform] = 'translate(' + posX + 'px,' + posY + 'px)';
