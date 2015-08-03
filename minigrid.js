@@ -4,7 +4,8 @@
     var forEach = Array.prototype.forEach;
     var containerEle = document.querySelector(containerSelector);
     var itemsNodeList = document.querySelectorAll(itemSelector);
-    gutter = gutter || 6;
+    gutter = (typeof gutter === "number" && isFinite(gutter) 
+      && Math.floor(gutter) === gutter) ? gutter : 6;
     containerEle.style.width = '';
     var containerWidth = containerEle.getBoundingClientRect().width;
     var firstChildWidth = itemsNodeList[0].getBoundingClientRect().width + gutter;
