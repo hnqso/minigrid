@@ -47,7 +47,6 @@ small, .font_small {font-size: 0.889em;}
 a {
   text-decoration: none;
   color: #536DFE;
-  border-bottom: solid 2px #8C9EFF;
 }
 
 .info-bar {
