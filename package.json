@@ -1,6 +1,6 @@
 {
   "name": "minigrid",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "min",
     "mini",
     "grid",
+    "minigrid",
     "cascading",
     "layout",
     "javascript",
@@ -25,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/henriquea/minigrid/issues"
   },
-  "homepage": "https://github.com/henriquea/minigrid"
+  "homepage": "http://alves.im/minigrid"
 }

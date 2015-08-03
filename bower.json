@@ -1,8 +1,8 @@
 {
   "name": "minigrid",
   "main": "index.js",
-  "version": "1.3.0",
-  "homepage": "http://henriquea.github.io/minigrid",
+  "version": "1.4.0",
+  "homepage": "http://alves.im/minigrid",
   "authors": [
     "Henrique Alves <henriquea@gmail.com>"
   ],
@@ -16,6 +16,8 @@
     "layout",
     "grid",
     "min",
+    "mini",
+    "minigrid",
     "minimal",
     "javascript",
     "responsive"
