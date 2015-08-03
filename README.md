@@ -1,3 +1,5 @@
+![icon](http://alves.im/minigrid/assets/favicon-32x32.png)
+
 # minigrid
 Minimal 2kb zero dependency cascading grid layout.
 
