@@ -49,7 +49,7 @@ a {
 
 .brand {
   display: block;
-  background-image: url(images/minigrid-logo.svg);
+  background-image: url(../images/minigrid-logo.svg);
   background-repeat: no-repeat;
   background-position: center 0px;
   padding-top: 1.2em;
@@ -134,21 +134,21 @@ h1 a {
 }
 
 .icon-headline.install {
-  background-image: url(images/icon-install.svg);
+  background-image: url(../images/icon-install.svg);
 }
 
 .icon-headline.usage {
-  background-image: url(images/icon-usage.svg);
+  background-image: url(../images/icon-usage.svg);
 }
 
 .icon-headline.responsive {
-  background-image: url(images/icon-responsive.svg);
+  background-image: url(../images/icon-responsive.svg);
 }
 
 .icon-headline.animation {
-  background-image: url(images/icon-animation.svg);
+  background-image: url(../images/icon-animation.svg);
 }
 
 .icon-headline.more {
-  background-image: url(images/icon-more.svg);
+  background-image: url(../images/icon-more.svg);
 }
