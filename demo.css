@@ -8,25 +8,22 @@
 }
 
 .grid {
-  
   position: relative;
-
-  /* fluffy */
+  /* optional */
   margin: 0 auto;
   width: 98%;
-  /* end fluffy */
+  /* end optional */
 }
 
 .grid-item {
-  position: absolute;
+  /* optional */
   top: 0;
   left: 0;
-   /* fluffy */
-   width: 180px;
-   height: 120px;
-   border-radius: 3px;
-   background-color: #536DFE;
-   /* end fluffy */
+  width: 180px;
+  height: 120px;
+  border-radius: 3px;
+  background-color: #536DFE;
+  /* end optional */
 }
 
 /* just playing with the height */
