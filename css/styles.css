@@ -52,7 +52,8 @@ a {
   background-image: url(../images/minigrid-logo.svg);
   background-repeat: no-repeat;
   background-position: center 0px;
-  padding-top: 1.2em;
+  padding-top: 1.8em;
+  background-size: 24px;
 }
 
 .info-bar {
