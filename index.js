@@ -1,4 +1,4 @@
-/* minigrid v1.5.0 - minimal cascading grid layout http://alves.im/minigrid */
+/* @license minigrid v1.5.0 - minimal cascading grid layout http://alves.im/minigrid */
 (function(exports){
 
   'use strict';
