@@ -1,7 +1,7 @@
 {
   "name": "minigrid",
   "main": "index.js",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "homepage": "http://alves.im/minigrid",
   "authors": [
     "Henrique Alves <henriquea@gmail.com>"

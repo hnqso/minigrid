@@ -35,12 +35,12 @@ grid('.grid', '.grid-item');
 - **containerSelector** - `string`: required. The element selector where your grid items sit.
 - **itemSelector** - `string`: required. The grid item element selector.
 - **gutter** - `number`: optional. The space between items, the default is `6`.
-- **animate** - `function`: optional.
-- **done** - `function`: optional. Callback called after the grid was updated.
+- **animate(element, x, y, index)** - `function`: optional.
+- **done(nodeList)** - `function`: optional. Callback called after the grid is built. It returns the node list of grid items.
 
 #### `animate`
 
-It returns a function with the `element`,`x`,`y` and `index` for each grid item.
+It returns a function with the `element`,`x`,`y` and `index` parameters for each grid item.
 
 ```js
 function animate(el, x, y, index) {
@@ -94,9 +94,7 @@ minigrid('.grid', '.grid-item', 6, animate);
 
 ## Contributing
 
-Bare in mind that minigrid's main concept is simplicity. The API should be always under 2kb. Bug fixes are more than welcome! For any new feature please [Submit an issue](https://github.com/henriquea/minigrid/issues) first before send any pull request.
-
-Thank you everyone for the help so far! 🍺
+Plese see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
 

@@ -1,10 +1,14 @@
+/* minigrid v1.5.0 - minimal cascading grid layout http://alves.im/minigrid */
 (function(exports){
+
+  'use strict';
 
   function minigrid(containerSelector, itemSelector, gutter, animate, done) {
     var forEach = Array.prototype.forEach;
     var containerEle = document.querySelector(containerSelector);
+    if (!containerEle) { return false; }
     var itemsNodeList = containerEle.querySelectorAll(itemSelector);
-    if (itemsNodeList.length === 0) { return; }
+    if (itemsNodeList.length === 0) { return false; }
     gutter = (typeof gutter === "number" && isFinite(gutter) 
       && Math.floor(gutter) === gutter) ? gutter : 6;
     containerEle.style.width = '';
@@ -55,7 +59,7 @@
     containerEle.style.height = containerHeight + 'px';
 
     if (typeof done === 'function'){
-      done();
+      done(itemsNodeList);
     }
   }
 
