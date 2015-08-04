@@ -3,7 +3,7 @@
   function minigrid(containerSelector, itemSelector, gutter, animate, done) {
     var forEach = Array.prototype.forEach;
     var containerEle = document.querySelector(containerSelector);
-    var itemsNodeList = document.querySelectorAll(itemSelector);
+    var itemsNodeList = containerEle.querySelectorAll(itemSelector);
     gutter = (typeof gutter === "number" && isFinite(gutter) 
       && Math.floor(gutter) === gutter) ? gutter : 6;
     containerEle.style.width = '';
