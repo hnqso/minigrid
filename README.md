@@ -59,7 +59,7 @@ window.addEventListener('resize', function(){
 });
 ```
 
-[Demo](http://output.jsbin.com/maroda/1/)
+[Demo](http://output.jsbin.com/maroda/9/)
 
 ## Animation
 
@@ -71,7 +71,7 @@ The simple solution is to add a CSS `transition` in your grid item:
 }
 ```
 
-[Demo](http://output.jsbin.com/maroda/3/)
+[Demo](http://output.jsbin.com/maroda/10/)
 
 Or take it to the next level by using your favourite library. The example bellow is using the awesome [Dynamics.js](http://dynamicsjs.com) library:
 
@@ -90,11 +90,11 @@ function animate(item, x, y, index) {
 
 minigrid('.grid', '.grid-item', 6, animate);
 ```
-[Demo](http://output.jsbin.com/maroda/7/)
+[Demo](http://output.jsbin.com/maroda/11/)
 
 ## Contributing
 
-[Submit a new issue](https://github.com/henriquea/minigrid/issues) before send any pull request. I do have a few ideas and we can use that space to discuss all. 
+Please [Submit a new issue](https://github.com/henriquea/minigrid/issues) before send any pull request. We can use the space to discuss all ideas. 
 
 ## License
 
