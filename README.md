@@ -94,7 +94,9 @@ minigrid('.grid', '.grid-item', 6, animate);
 
 ## Contributing
 
-Please [Submit a new issue](https://github.com/henriquea/minigrid/issues) before send any pull request. We can use the space to discuss all ideas. 
+Bare in mind that minigrid's main concept is simplicity. The API should be always under 2kb. Bug fixes are more than welcome! For any new feature please [Submit an issue](https://github.com/henriquea/minigrid/issues) first before send any pull request.
+
+Thank you everyone for the help so far! 🍺
 
 ## License
 
