@@ -8,10 +8,11 @@ Thank you all! 🍺
 
 All commits need pass the tests `npm run test`.
 
-Install browserfy and testling globally.
+Install browserify and testling globally.
 
 ```bash
-$ npm install browserfy -g
+$ npm install
+$ npm install browserify -g
 $ npm install testling -g
 ```
 
