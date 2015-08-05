@@ -4,12 +4,12 @@ var minigrid = require('./');
 var test = require('tape');
 
 test('minigrid init with empty container', function(t){
-  t.equal(minigrid('.grid', '.grid-item'), false);
+  t.equal(minigrid('.grid', '.grid-item'), false, 'return false');
   t.end();
 });
 
 test('minigrid init with empty node list', function(t){
-  t.equal(minigrid('.grid', '.grid-item'), false);
+  t.equal(minigrid('.grid', '.grid-item'), false, 'return false');
   t.end();
 });
 
@@ -21,8 +21,8 @@ test('minigrid done callback', function(t){
   gridItem.classList.add('grid-item');
   grid.appendChild(gridItem);
   minigrid('.grid', '.grid-item', 6, null, function(nodeList){
-    t.equal(typeof nodeList.length, 'number');
-    t.comment(nodeList.length + ' grid items');
+    t.equal(typeof nodeList.length, 'number', 'nodeList.lenght is number');
+    t.equal(nodeList.length > 0, true, nodeList.length + ' grid items');
     t.end();
   });
 });
