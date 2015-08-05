@@ -30,9 +30,9 @@ grid('.grid', '.grid-item');
 
 ## API
 
-### `minigrid(containerSelector, itemSelector, gutter, animate, done)`
+### `minigrid(gridContainer, itemSelector, gutter, animate, done)`
 
-- **containerSelector** - `string`: required. The element selector where your grid items sit.
+- **gridContainer** - `string`|`node`: required. The element selector or element where your grid items sit.
 - **itemSelector** - `string`: required. The grid item element selector.
 - **gutter** - `number`: optional. The space between items, the default is `6`.
 - **animate(element, x, y, index)** - `function`: optional.

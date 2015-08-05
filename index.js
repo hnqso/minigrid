@@ -3,9 +3,9 @@
 
   'use strict';
 
-  function minigrid(containerSelector, itemSelector, gutter, animate, done) {
+  function minigrid(gridContainer, itemSelector, gutter, animate, done) {
     var forEach = Array.prototype.forEach;
-    var containerEle = document.querySelector(containerSelector);
+    var containerEle = gridContainer instanceof Node ? gridContainer : document.querySelector(gridContainer);
     if (!containerEle) { return false; }
     var itemsNodeList = containerEle.querySelectorAll(itemSelector);
     if (itemsNodeList.length === 0) { return false; }
