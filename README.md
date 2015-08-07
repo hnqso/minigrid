@@ -92,6 +92,10 @@ minigrid('.grid', '.grid-item', 6, animate);
 ```
 [Demo](http://output.jsbin.com/maroda/11/)
 
+## Built with Minigrid
+
+Please [let me know](https://twitter.com/healves82) where are you using Minigrid.
+
 ## Contributing
 
 Plese see [CONTRIBUTING](CONTRIBUTING.md).
