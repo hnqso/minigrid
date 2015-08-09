@@ -98,6 +98,10 @@ Minigrid won't fit all cases. It was done having in mind "cards" with same width
 
 If you need more control I'd recommend [Isotope](http://isotope.metafizzy.co).
 
+## Built with Minigrid
+
+Please [let me know](https://twitter.com/healves82) where are you using Minigrid.
+
 ## Contributing
 
 Plese see [CONTRIBUTING](CONTRIBUTING.md).
