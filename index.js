@@ -42,7 +42,7 @@
       item.style.position = 'absolute';
       if (!animate) {
         forEach.call(transformProps, function(transform){
-          item.style[transform] = 'translate(' + posX + 'px,' + posY + 'px)';
+          item.style[transform] = 'translate3D(' + posX + 'px,' + posY + 'px,0)';
         });  
       }
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
