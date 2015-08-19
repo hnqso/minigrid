@@ -30,6 +30,7 @@
   },
   "homepage": "http://alves.im/minigrid",
   "devDependencies": {
+    "phantomjs": "1.9.2-6",
     "browserify": "^11.0.1",
     "tape": "^4.0.2",
     "tape-run": "^1.1.0",
