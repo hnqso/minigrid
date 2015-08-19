@@ -4,7 +4,7 @@
   "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "index.js",
   "scripts": {
-    "uglify": "./node_modules/.bin/uglifyjs --comments -m -c -o minigrid.min.js index.js",
+    "uglify": "uglifyjs --comments -m -c -o minigrid.min.js index.js",
     "test": "browserify test.js | tape-run",
     "build": "npm run test && npm run uglify"
   },
