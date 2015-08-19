@@ -4,8 +4,8 @@
   "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "index.js",
   "scripts": {
-    "uglify": "./node_modules/.bin/uglifyjs --comments -m -c -o minigrid.min.js index.js",
-    "test": "browserify test.js | testling | tap-spec",
+    "uglify": "uglifyjs --comments -m -c -o minigrid.min.js index.js",
+    "test": "browserify test.js | tape-run",
     "build": "npm run test && npm run uglify"
   },
   "repository": {
@@ -30,9 +30,10 @@
   },
   "homepage": "http://alves.im/minigrid",
   "devDependencies": {
+    "phantomjs": "1.9.2-6",
     "browserify": "^11.0.1",
-    "tap-spec": "^4.0.2",
     "tape": "^4.0.2",
+    "tape-run": "^1.1.0",
     "uglify-js": "^2.4.24"
   }
 }
