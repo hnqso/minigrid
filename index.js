@@ -3,6 +3,21 @@
 
   'use strict';
 
+  var transformProp;
+  (function () {
+    var style = document.createElement('a').style;
+    var prop;
+    if (style[prop = 'webkitTransform'] !== undefined) {
+      transformProp = prop;
+    }
+    if (style[prop = 'msTransform'] !== undefined) {
+      transformProp = prop;
+    }
+    if (style[prop = 'transform'] !== undefined) {
+      transformProp = prop;
+    }
+  } ());
+
   function minigrid(gridContainer, itemSelector, gutter, animate, done) {
     var forEach = Array.prototype.forEach;
     var containerEle = gridContainer instanceof Node ? gridContainer : document.querySelector(gridContainer);
@@ -32,18 +47,9 @@
       itemIndex = itemsGutter.indexOf(itemIndex);
       var posX = itemsPosX[itemIndex];
       var posY = itemsGutter[itemIndex];
-      var transformProps = [
-        'webkitTransform', 
-        'MozTransform', 
-        'msTransform',
-        'OTransform', 
-        'transform'
-      ];
       item.style.position = 'absolute';
-      if (!animate) {
-        forEach.call(transformProps, function(transform){
-          item.style[transform] = 'translate3D(' + posX + 'px,' + posY + 'px,0)';
-        });  
+      if (!animate && transformProp) {
+        item.style[transformProp] = 'translate3D(' + posX + 'px,' + posY + 'px,0)';
       }
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
       count = count + 1;
