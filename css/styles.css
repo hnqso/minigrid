@@ -131,7 +131,7 @@ h1 a {
   text-align: center;
   padding: calc(1.414em * 2) 0;
   background-repeat: no-repeat;
-  background-position: center calc(1.614em);
+  background-position: center 1.614em;
 }
 
 .icon-headline.install {
