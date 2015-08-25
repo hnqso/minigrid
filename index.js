@@ -1,4 +1,4 @@
-/* @license minigrid v1.6.2 - minimal cascading grid layout http://alves.im/minigrid */
+/* @license minigrid v1.6.3 - minimal cascading grid layout http://alves.im/minigrid */
 (function(exports){
 
   'use strict';
@@ -24,7 +24,7 @@
     if (!containerEle) { return false; }
     var itemsNodeList = containerEle.querySelectorAll(itemSelector);
     if (itemsNodeList.length === 0) { return false; }
-    gutter = (typeof gutter === "number" && isFinite(gutter) 
+    gutter = (typeof gutter === "number" && isFinite(gutter)
       && Math.floor(gutter) === gutter) ? gutter : 6;
     containerEle.style.width = '';
     var containerWidth = containerEle.getBoundingClientRect().width;
@@ -34,7 +34,7 @@
     containerWidth = (firstChildWidth * cols + gutter) + 'px';
     containerEle.style.width = containerWidth;
     containerEle.style.position = 'relative';
-    
+
     for (var itemsGutter = [], itemsPosX = [], g = 0; g < cols; g++) {
       itemsPosX.push(g * firstChildWidth + gutter);
       itemsGutter.push(gutter);
