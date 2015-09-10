@@ -35,6 +35,38 @@
 .grid-item.f { height: 220px; }
 .grid-item.g { height: 205px; }
 
+/* carbon */
+#carbonads {
+  padding: 10px;
+  background: #fff;
+  width: 130px;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+#carbonads a {
+  font-size: 13px;
+  line-height: 13px;
+  display: inline-block;
+  color: #212121;
+}
+
+#carbonads .carbon-img {
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+  overflow: hidden;
+}
+
+#carbonads .carbon-img {
+  border-radius: 3px;
+}
+
+#carbonads a.carbon-poweredby {
+  color: #8B8B8B;
+}
+
 /* mq */
 
 @media (max-width: 600px) {
