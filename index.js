@@ -45,10 +45,10 @@
 
     var itemsGutter = [];
     var itemsPosX = [];
-    forEach(cols, function (col, g) {
+    for ( var g = 0 ; g < cols ; ++g ) {
       itemsPosX.push(g * firstChildWidth + gutter);
       itemsGutter.push(gutter);
-    });
+    }
 
     forEach(itemsNodeList, function (item) {
       var itemIndex = itemsGutter
