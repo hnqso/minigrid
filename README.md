@@ -108,4 +108,4 @@ Plese see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
 
-MIT &copy; 2015 [Henrique Alves](http://alves.im)
+MIT &copy; 2015 [Henrique Alves](http://alves.im).
