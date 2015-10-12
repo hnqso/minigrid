@@ -8,10 +8,6 @@ Minigrid is a minimal 2kb zero dependency cascading grid layout.
 
 `npm install minigrid`
 
-Using Bower:
-
-`bower install minigrid`
-
 ## Usage
 
 ```html
