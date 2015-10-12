@@ -31,6 +31,10 @@ module.exports = {
     }, {
       test: /\.(png|jpg|svg|gif)$/,
       loader: 'url-loader?limit=14250'
+    }, {
+      test: /static/,
+      exclude: /node_modules/,
+      loader: 'file-loader?name=[name].[ext]'
     }]
 
   },

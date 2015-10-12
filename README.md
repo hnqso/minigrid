@@ -90,7 +90,7 @@ minigrid('.grid', '.grid-item', 6, animate);
 
 ## Limitations
 
-Minigrid won't fit all cases. It was done having in mind "cards" with same width and different heights. It won't work if your grid item has different width sizes.
+Minigrid won't solve all problems. It was done having in mind "cards" with same width and different heights. It won't work if your grid item has different width sizes.
 
 If you need more control I'd recommend [Isotope](http://isotope.metafizzy.co).
 
