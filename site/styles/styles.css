@@ -1,11 +1,11 @@
 /* global */
 
 body {
-
   font-weight: 400;
 }
 
-body {
+body,
+h6 a {
   color: #212121;
 }
 
@@ -15,34 +15,78 @@ a {
 
 h6 {
   font-weight: bold;
+  font-size: 18px;
 }
 
+pre {
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+}
+
+code {
+  overflow-x: auto;
+}
+
+/* overwrite skeleton */
 .container {
-  max-width: 990px;
+  max-width: 790px;
 }
 
-.navbar {
-  padding: 15px 0;
-  margin: 0;
-}
-
-.navbar li {
+code.no-style {
+  border: 0;
+  background: #fff;
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 
-.navbar a {
+/* custom */
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar a,
+.links a {
   margin-right: 30px;
   color: #212121;
 }
 
-
-.docs-section {
+.section {
   border-top: solid 1px #eee;
   padding: 6rem 0;
 }
 
 .hero {
   border-top: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero .button-primary {
+  border-color: #18191B;
+  background: #303135;
+}
+
+.foo {
+  padding: 30px 0;
+}
+
+.vs {
+  display: inline-block;
+  font-weight: normal;
+}
+
+.vs cite {
+  font-style: normal;
+  font-weight: 300;
+  color: #616161;
+}
+
+.links {
+  float: right;
+}
+
+.links a {
+  margin-right: 0;
+  margin-left: 30px;
 }
