@@ -1,7 +1,7 @@
 import './styles/normalize.css';
 import './styles/syntax.css';
 import './styles/skeleton.css';
-import './styles/styles.css';
+import './styles/custom.css';
 
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
@@ -11,10 +11,10 @@ const Container = ({children}) =>
 
 class Site extends Component {
   render() {
-    const usageJsMarkup = {__html: 'minigrid({ container: ".grid", item: ".grid__item" });'};
-    const responsivenessJsMarkup = {__html: 'window.addEventListener("resize", function(){\n\tminigrid({ container: ".grid", item: ".grid__item" });\n});'}
-    const animationCSSMarkup = {__html: '.grid__item {\n\topacity: 0;\n\ttransition: opacity .3s ease;\n}\n\n.grid__item--animate {\n\topacity: 1;\n}'}
-    const animateAdvancedMarkup = {__html: '/* styles.css */\n.grid__item {\n\ttransition-property: opacity, scale;\n\topacity: 0;\n\tscale: 0.95;\n}\n\n/* index.js */\nminigrid({\n\tcontainer: ".grid",\n\titem: ".grid__item",\n\tanimate: function(el, x, y, index) {\n\t\tdynamics.animate(el, {\n\t\t\topacity: 1,\n\t\t\tscale: 1,\n\t\t\ttransformX: x,\n\t\t\ttransformY: y\n\t\t}, {\n\t\t\ttype: dynamics.spring,\n\t\t\tfrequency: 200,\n\t\t\tfriction: 270,\n\t\t\tduration: 800\n\t\t});\n\t}\n});'}
+    const usageJsMarkup = {__html: 'minigrid({ container: ".grid", item: ".grid-item" });'};
+    const responsivenessJsMarkup = {__html: 'window.addEventListener("resize", function(){\n\tminigrid({ container: ".grid", item: ".grid-item" });\n});'}
+    const animationCSSMarkup = {__html: '.grid-item {\n\topacity: 0;\n\ttransition: opacity .3s ease;\n}\n\n.grid-item--animate {\n\topacity: 1;\n}'}
+    const animationMarkup = {__html: '/* styles.css */\n.grid-item {\n\ttransition-property: opacity, scale;\n\topacity: 0;\n\tscale: 0.95;\n}\n\n/* index.js */\nminigrid({\n\tcontainer: ".grid",\n\titem: ".grid-item",\n\tanimate: function(el, x, y, index) {\n\t\tdynamics.animate(el, {\n\t\t\topacity: 1,\n\t\t\tscale: 1,\n\t\t\ttransformX: x,\n\t\t\ttransformY: y\n\t\t}, {\n\t\t\ttype: dynamics.spring,\n\t\t\tfrequency: 200,\n\t\t\tfriction: 270,\n\t\t\tduration: 800\n\t\t});\n\t}\n});'}
     return (
       <Container>
 
@@ -65,9 +65,9 @@ class Site extends Component {
               <pre>
                 <code className="prettyprint lang-html">
                   &lt;div class="grid"&gt;{'\n'}
-                    {'\t'}&lt;div class="grid__item"&gt;&lt;/div&gt;{'\n'}
-                    {'\t'}&lt;div class="grid__item"&gt;&lt;/div&gt;{'\n'}
-                    {'\t'}&lt;div class="grid__item"&gt;&lt;/div&gt;{'\n'}
+                    {'\t'}&lt;div class="grid-item"&gt;&lt;/div&gt;{'\n'}
+                    {'\t'}&lt;div class="grid-item"&gt;&lt;/div&gt;{'\n'}
+                    {'\t'}&lt;div class="grid-item"&gt;&lt;/div&gt;{'\n'}
                   &lt;/div&gt;
                 </code>
               </pre>
@@ -133,17 +133,17 @@ class Site extends Component {
           <div className="row">
             <div className="twelve columns">
               <h6><a href="#animation" name="animation">Animation</a></h6>
-              <p>Minigrid provide one simple way to animate the child items with CSS only. Minigrid appends the <code>--animate</code> to your grid item class name.</p>
+              <p>Minigrid provide one simple way to animate the child items with CSS only. Minigrid appends the <code>--animate</code> to your item class name.</p>
               <pre>
                 <code className="prettyprint lang-css">
                   <span dangerouslySetInnerHTML={animationCSSMarkup} />
                 </code>
               </pre>
               <p><a href="#" className="button">Demo</a></p>
-              <p>You may use the <code>animate</code> function to control it via JavaScript. The example bellow is using <a href="http://dynamicsjs.com/">Dynamics.js</a> library.</p>
+              <p>You may use the <code>animate</code> function to control it via JavaScript. The example bellow is using the <a href="http://dynamicsjs.com/">Dynamics.js</a> library.</p>
               <pre>
                 <code className="prettyprint lang-js">
-                  <span dangerouslySetInnerHTML={animateAdvancedMarkup} />
+                  <span dangerouslySetInnerHTML={animationMarkup} />
                 </code>
               </pre>
               <p><a href="#" className="button">Demo</a></p>

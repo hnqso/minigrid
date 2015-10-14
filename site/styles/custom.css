@@ -6,7 +6,7 @@ body {
 
 body,
 h6 a {
-  color: #212121;
+  color: #424242;
 }
 
 a {
@@ -48,7 +48,7 @@ code.no-style {
 .navbar a,
 .links a {
   margin-right: 30px;
-  color: #212121;
+  color: #424242;
 }
 
 .section {
