@@ -97,7 +97,7 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
-      item.classList.add(item.className.split(' ')[0] + '--animate');
+      item.classList.add(item.className.split(' ')[0] + '--loaded');
 
       if (!props.animate && transformProp) {
         item.style[transformProp] = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
