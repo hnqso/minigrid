@@ -6,7 +6,7 @@ body {
 
 body,
 h6 a {
-  color: #424242;
+  color: #1E2022;
 }
 
 a {
@@ -15,7 +15,9 @@ a {
 
 h6 {
   font-weight: bold;
-  font-size: 18px;
+  /*font-size: 1.7rem;
+  line-height: 1.5;*/
+  text-transform: uppercase;
 }
 
 pre {
@@ -30,7 +32,7 @@ code {
 
 /* overwrite skeleton */
 .container {
-  max-width: 790px;
+  max-width: 860px;
 }
 
 code.no-style {
@@ -43,12 +45,14 @@ code.no-style {
 /* custom */
 .navbar {
   padding: 15px 0;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar a,
 .links a {
   margin-right: 30px;
-  color: #424242;
+  color: #1E2022;
 }
 
 .section {
@@ -62,6 +66,17 @@ code.no-style {
   text-align: center;
 }
 
+.hero .release {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.headline {
+  padding: 4rem 0;
+  padding-bottom: 1rem;
+}
+
 .hero .button-primary {
   border-color: #18191B;
   background: #303135;
@@ -73,13 +88,13 @@ code.no-style {
 
 .vs {
   display: inline-block;
-  font-weight: normal;
 }
 
 .vs cite {
   font-style: normal;
   font-weight: 300;
   color: #616161;
+  font-size: 13px;
 }
 
 .links {
