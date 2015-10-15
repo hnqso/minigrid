@@ -54,7 +54,7 @@
   }
 
   function init(containerEle, itemsNodeList, props) {
-    
+
     containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
 
     var gutter = (
