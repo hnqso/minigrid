@@ -23,7 +23,7 @@ const NavBar = ({children}) =>
   </div>;
 
 const installMarkup =
-`<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/minigrid/1.6.5/minigrid.min.js"></script>`;
+`<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/minigrid/2.0.0/minigrid.min.js"></script>`;
 
 const usageHtmlMarkup =
 `<div class="grid">
