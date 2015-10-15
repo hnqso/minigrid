@@ -1,8 +1,6 @@
 # Minigrid
 
-**Cascading grid without pain.**
-
-Minimal is a 2kb zero dependency cascading grid layout.
+Minigrid is a minimal is a 2kb zero dependency cascading grid layout.
 
 Website: [http://alves.im/minigrid](http://alves.im/minigrid/).
 
