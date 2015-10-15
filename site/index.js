@@ -113,7 +113,7 @@ class Site extends Component {
         </Container>
 
         <div className="demo">
-          <h6 className="demo-title">Places to visit before you die</h6>
+          <h6 className="demo-title">Places to visit before I get too old</h6>
           <Container>
             <div className="row">
               <div className="twelve columns">
@@ -167,13 +167,12 @@ class Site extends Component {
                 <pre><code className="prettyprint lang-js">minigrid(<cite>props</cite>)</code></pre>
                 <p>props is an object with the follow properties:</p>
                 <ul>
-                  <li><code>container *</code></li>
-                  <li><code>item *</code></li>
+                  <li><code>container</code></li>
+                  <li><code>item</code></li>
                   <li><code>gutter</code></li>
                   <li><code>animate(item, x, y, index)</code></li>
                   <li><code>done(nodeList)</code></li>
                 </ul>
-                <p><code className="no-style">* required</code></p>
                 <p><strong>container</strong> <code className="no-style">string or node</code></p>
                 <p>The element selector or element where your grid items sit.</p>
 

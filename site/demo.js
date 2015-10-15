@@ -13,24 +13,17 @@ export default class Demo extends Component {
       container: '.cards',
       item: '.card',
       animate: function(el, x, y, index) {
-        if (resizing) {
-          velocity(el, {
-            translateX: x + 'px',
-            translateY: y + 'px',
-            translateZ: 0
-          }, {
-            duration: 0,
-          });
-          return;
-        }
         velocity(el, {
           translateX: x + 'px',
           translateY: y + 'px',
           translateZ: 0
         }, {
           duration: 0,
-          delay: 500,
+          delay: resizing ? 0 : 500,
           complete: function() {
+            if (resizing) {
+              return;
+            }
             velocity(el, {
               opacity: [1, 0],
               scale: [1, 0.9],
@@ -164,7 +157,7 @@ export default class Demo extends Component {
               <img src="https://s-media-cache-ak0.pinimg.com/236x/d9/86/6b/d9866b911c08387bc8ab17a6c9897e85.jpg" />
             </div>
             <div className="card-info">
-              Somewhere, Iceland
+              The Cliff, Iceland
             </div>
           </div>
         </div>
