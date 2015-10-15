@@ -62,7 +62,7 @@
       typeof props.gutter === 'number' &&
       isFinite(props.gutter) &&
       Math.floor(props.gutter) === props.gutter
-    ) ? props.gutter : 6;
+    ) ? props.gutter : 0;
     var done = props.done;
 
     containerEle.style.width = '';
