@@ -45,7 +45,7 @@ window.addEventListener('resize', function(){
   minigrid({ container: '.grid', item: '.grid-item' });
 });`;
 
-const animationSimpleMarkup =
+const animationCSSMarkup =
 `.grid-item {
   opacity: 0;
   transition: opacity .3s ease;
@@ -99,7 +99,10 @@ class Site extends Component {
               <div className="twelve columns">
                 <div className="headline">
                   <h5>Cascading grid layout without pain.</h5>
-                  <a href="https://github.com/henriquea/minigrid/archive/master.zip" className="button button-primary">
+                  <a
+                    href="https://github.com/henriquea/minigrid/archive/master.zip"
+                    className="button button-primary"
+                  >
                     Download
                   </a>
                   <p className="release">v{pkg.version}</p>
@@ -182,7 +185,10 @@ class Site extends Component {
                 <code className="no-style">index</code> parameters for each child item.</p>
                 <p>See <a href="#animation">animation</a> for more information.</p>
                 <p><strong>done</strong> <code className="no-style">function</code></p>
-                <p>Callback called after the grid is built. It returns the <code>nodeList</code> of grid items.</p>
+                <p>
+                  Callback called after the grid is built. It returns the <code>nodeList</code>
+                  of grid items.
+                </p>
               </div>
             </div>
           </div>
@@ -192,9 +198,9 @@ class Site extends Component {
               <div className="twelve columns">
                 <h6><a href="#limitations" name="install">limitations</a></h6>
                 <p>
-                 Minigrid was built having in mind "cards" with same width and different heights. If your
-                 cards have different width sizes or you need more control I’d
-                 recommend <a href="http://isotope.metafizzy.co">Isotope</a>.
+                 Minigrid was built having in mind "cards" with same width and different heights.
+                 If your cards have different width sizes or you need more control I’d recommend
+                 <a href="http://isotope.metafizzy.co">Isotope</a>.
                 </p>
               </div>
             </div>
@@ -204,7 +210,10 @@ class Site extends Component {
             <div className="row">
               <div className="twelve columns">
                 <h6><a href="#responsiveness" name="responsiveness">Responsiveness</a></h6>
-                <p>minigrid is dead-simple and doesn’t provide anything in-the-box but you can do:</p>
+                <p>
+                  Minigrid is dead-simple and doesn’t provide anything in-the-box but you
+                 can do:
+                </p>
                 <pre>
                   <code className="prettyprint lang-js">{responsivenessMarkup}</code>
                 </pre>
@@ -220,7 +229,7 @@ class Site extends Component {
                 <p>Minigrid provide one simple way to animate the child items with CSS only.
                 Minigrid appends the <code>--animate</code> to your item class name.</p>
                 <pre>
-                  <code className="prettyprint lang-css">{animationSimpleMarkup}</code>
+                  <code className="prettyprint lang-css">{animationCSSMarkup}</code>
                 </pre>
                 <p><a href="#" className="button">Demo</a></p>
                 <p>You may use the <code>animate</code> function to control it via JavaScript.
