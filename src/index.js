@@ -47,16 +47,15 @@
       return;
     }
 
-    window.onload = function() {
+    (function(){
       init(containerEle, itemsNodeList, props);
-    }
-
+      loaded = true;
+    })();
   }
 
   function init(containerEle, itemsNodeList, props) {
-
+    
     containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
-    loaded = true;
 
     var gutter = (
       typeof props.gutter === 'number' &&
