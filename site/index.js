@@ -1,7 +1,7 @@
 import './styles/normalize.css';
 import './styles/syntax.css';
 import './styles/skeleton.css';
-import './styles/custom.css';
+import './styles/index.css';
 
 import pkg from '../package.json';
 
