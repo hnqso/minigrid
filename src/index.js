@@ -4,6 +4,7 @@
   'use strict';
 
   var transformProp;
+  var loaded;
   (function () {
     var style = document.createElement('a').style;
     var prop;
@@ -28,12 +29,29 @@
     }
   }
 
-  function minigrid (gridContainer, itemSelector, gutter, animate, done) {
-    var containerEle = gridContainer instanceof Node ? gridContainer : document.querySelector(gridContainer);
+  function minigrid (props) {
+    if (loaded) {
+      init(props);
+      return;
+    }
+    window.onload = function() {
+      init(props);
+    }
+  }
+
+  function init(props) {
+    var containerEle = props.container instanceof Node ?
+      props.container : document.querySelector(props.container);
     if (!containerEle) { return false; }
-    var itemsNodeList = containerEle.querySelectorAll(itemSelector);
+    containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    loaded = true;
+    var itemsNodeList = containerEle.querySelectorAll(props.item);
     if (itemsNodeList.length === 0) { return false; }
-    gutter = (typeof gutter === 'number' && isFinite(gutter) && Math.floor(gutter) === gutter) ? gutter : 6;
+    var gutter = (
+      typeof props.gutter === 'number' &&
+      isFinite(props.gutter) &&
+      Math.floor(props.gutter) === props.gutter
+    ) ? props.gutter : 6;
     containerEle.style.width = '';
     var containerWidth = containerEle.getBoundingClientRect().width;
     var firstChildWidth = itemsNodeList[0].getBoundingClientRect().width + gutter;
@@ -61,13 +79,14 @@
       var posX = itemsPosX[itemIndex];
       var posY = itemsGutter[itemIndex];
       item.style.position = 'absolute';
-      if (!animate && transformProp) {
+      item.classList.add(item.className.split(' ')[0] + '--animate');
+      if (!props.animate && transformProp) {
         item.style[transformProp] = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
       }
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
       count = count + 1;
-      if (animate) {
-        return animate(item, posX, posY, count);
+      if (props.animate) {
+        return props.animate(item, posX, posY, count);
       }
     });
 
@@ -80,8 +99,8 @@
 
     containerEle.style.height = containerHeight + 'px';
 
-    if (typeof done === 'function') {
-      done(itemsNodeList);
+    if (typeof props.done === 'function') {
+      props.done(itemsNodeList);
     }
   }
 
