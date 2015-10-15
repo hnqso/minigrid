@@ -1,16 +1,12 @@
 # Minigrid
 
-Minimal 2kb zero dependency cascading grid layout.
+Minigrid is a minimal 2kb zero dependency cascading grid layout.
 
-Cascading grid without pain.
-
-Website & Documentation: [http://alves.im/minigrid](http://alves.im/minigrid/).
+Website: [http://alves.im/minigrid](http://alves.im/minigrid/).
 
 ## When to use?
 
-Minigrid won't solve all problems. It was done having in mind "cards" with same width and different heights. It won't work if your grid item has different width sizes.
-
-If you need more control I'd recommend [Isotope](http://isotope.metafizzy.co).
+Minigrid was built having in mind "cards" with same width and different heights. If your cards have different width sizes or you need more control I'd recommend [Isotope](http://isotope.metafizzy.co).
 
 ## Contributing
 
