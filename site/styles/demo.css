@@ -1,4 +1,6 @@
 .demo {
+  position: relative;
+  display: block;
   background: linear-gradient(45deg, #B6D5E1 0%, #ECF1F2 100%);
   padding: 6rem 0;
   border-bottom: solid 1px #F0F5F9;
@@ -35,7 +37,6 @@
   margin: 0 auto;
   text-align: left;
   display: block;
-  min-height: 600px;
 }
 
 .card {
