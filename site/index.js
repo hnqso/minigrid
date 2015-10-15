@@ -113,7 +113,6 @@ class Site extends Component {
         </Container>
 
         <div className="demo">
-          <h6 className="demo-title">Places to visit before we get too old</h6>
           <Container>
             <div className="row">
               <div className="twelve columns">
