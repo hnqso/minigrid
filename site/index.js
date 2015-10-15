@@ -96,7 +96,7 @@ minigrid({
             <div className="row">
               <div className="twelve columns">
                 <div className="headline">
-                  <h4>Cascading grid layout without pain.</h4>
+                  <h5>Cascading grid layout without pain.</h5>
                   <a href="https://github.com/henriquea/minigrid/archive/master.zip" className="button button-primary">
                     Download
                   </a>
