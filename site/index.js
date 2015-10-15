@@ -113,7 +113,7 @@ class Site extends Component {
         </Container>
 
         <div className="demo">
-          <h6 className="demo-title">Places to visit before I get too old</h6>
+          <h6 className="demo-title">Places to visit before we get too old</h6>
           <Container>
             <div className="row">
               <div className="twelve columns">
@@ -218,7 +218,7 @@ class Site extends Component {
                 <pre>
                   <code className="prettyprint lang-js">{responsivenessMarkup}</code>
                 </pre>
-                <p><a href="#" className="button">Demo</a></p>
+                <p><a href="http://codepen.io/henriquea/full/GpMYLd/" className="button">Demo</a></p>
               </div>
             </div>
           </div>
@@ -232,14 +232,14 @@ class Site extends Component {
                 <pre>
                   <code className="prettyprint lang-css">{animationCSSMarkup}</code>
                 </pre>
-                <p><a href="#" className="button">Demo</a></p>
+                <p><a href="http://codepen.io/henriquea/full/epGbNe/" className="button">Demo</a></p>
                 <p>You may use the <code>animate</code> function to control it via JavaScript.
                 The example bellow is using the <a href="http://julian.com/research/velocity/">
                 Velocity.js</a> library.</p>
                 <pre>
                   <code className="prettyprint lang-js">{animationMarkup}</code>
                 </pre>
-                <p><a href="#" className="button">Demo</a></p>
+                <p><a href="http://codepen.io/henriquea/full/wKrRMG/" className="button">Demo</a></p>
               </div>
             </div>
           </div>
