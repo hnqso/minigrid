@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && webpack -p --config webpack.config.dist.js --profile --colors",
+    "build": "npm run clean && npm run minigrid && webpack -p --config webpack.config.dist.js --profile --colors",
     "deploy": "npm run build && npm run ship",
+    "minigrid": "webpack -p --config webpack.config.minigrid.js --no-info",
     "ship": "ship dist -to gh-pages",
     "start": "node server.js"
   },
