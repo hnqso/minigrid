@@ -50,6 +50,7 @@ export default class Demo extends Component {
     window.addEventListener('resize', function(){
       self.grid(true);
     });
+    /* setTimout fix loading issue on Safari */
     setTimeout(function() {
       self.grid();
     }, 0);
