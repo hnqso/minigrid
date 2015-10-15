@@ -15,8 +15,6 @@ a {
 
 h6 {
   font-weight: bold;
-  /*font-size: 1.7rem;
-  line-height: 1.5;*/
   text-transform: uppercase;
 }
 
@@ -30,10 +28,12 @@ code {
   overflow-x: auto;
 }
 
-/* overwrite skeleton */
+/* skeleton */
 .container {
   max-width: 860px;
 }
+
+/* custom */
 
 code.no-style {
   border: 0;
@@ -42,16 +42,15 @@ code.no-style {
   padding: 0;
 }
 
-/* custom */
 .navbar {
-  padding: 15px 0;
+  padding: 3rem 0;
   font-size: 13px;
   font-weight: 400;
 }
 
 .navbar a,
 .links a {
-  margin-right: 30px;
+  margin-right: 3rem;
   color: #1E2022;
 }
 
@@ -86,7 +85,7 @@ code.no-style {
 }
 
 .foo {
-  padding: 30px 0;
+  padding: 3rem 0;
 }
 
 .vs {
@@ -106,5 +105,5 @@ code.no-style {
 
 .links a {
   margin-right: 0;
-  margin-left: 30px;
+  margin-left: 3rem;
 }
