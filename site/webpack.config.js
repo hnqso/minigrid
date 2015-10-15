@@ -17,6 +17,17 @@ module.exports = {
     publicPath: '/'
   },
 
+  plugins: [
+    new ExtractTextPlugin('styles.css', { allChunks: true }),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new webpack.NormalModuleReplacementPlugin(
+      /^minigrid$/,
+      '../src/index'
+    )
+  ],
+
   module: {
     loaders: [{
       test: /\.html?$/,
@@ -41,17 +52,6 @@ module.exports = {
       loader: 'file-loader?name=[name].[ext]'
     }]
 
-  },
-
-  resolve: {
-    modulesDirectories: ['node_modules', 'components']
-  },
-
-  plugins: [
-    new ExtractTextPlugin('styles.css', { allChunks: true }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
-  ]
+  }
 
 };

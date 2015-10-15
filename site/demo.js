@@ -1,7 +1,7 @@
 import './styles/demo.css';
 
 import velocity from 'velocity-animate';
-import minigrid from '../src/index';
+import minigrid from 'minigrid';
 
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
