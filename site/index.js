@@ -22,20 +22,16 @@ const NavBar = ({children}) =>
     </div>
   </div>;
 
-class Site extends Component {
-
-  render() {
-
-    const usageHtmlMarkup =
+const usageHtmlMarkup =
 `<div class="grid">
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
 </div>`;
 
-    const usageJsMarkup = `minigrid({ container: '.grid', item: '.grid-item' });`;
+const usageJsMarkup = `minigrid({ container: '.grid', item: '.grid-item' });`;
 
-    const responsivenessMarkup =
+const responsivenessMarkup =
 `/* styles.css */
 .grid {
   margin: 0 auto;
@@ -46,7 +42,7 @@ window.addEventListener('resize', function(){
   minigrid({ container: '.grid', item: '.grid-item' });
 });`;
 
-    const animationSimpleMarkup =
+const animationSimpleMarkup =
 `.grid-item {
   opacity: 0;
   transition: opacity .3s ease;
@@ -56,7 +52,7 @@ window.addEventListener('resize', function(){
   opacity: 1;
 }`;
 
-    const animationMarkup = `/* styles.css */
+const animationMarkup = `/* styles.css */
 .grid-item {
   transform-origin: 50%;
   opacity: 0;
@@ -86,6 +82,9 @@ minigrid({
   }
 });`;
 
+class Site extends Component {
+
+  render() {
     return (
       <div>
         <Container>
