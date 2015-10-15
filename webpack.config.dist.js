@@ -6,10 +6,6 @@ var banner = '@license minigrid ';
 banner = banner + pkg.version;
 banner = banner + ' – minimal cascading grid layout http://alves.im/minigrid';
 
-config.devtool = 'source-map';
-
-config.output.publicPath = './';
-
 config.plugins.push(
   new webpack.DefinePlugin({
     'process.env': {

@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-dist
 ship.conf
 *.log
 *.zip
