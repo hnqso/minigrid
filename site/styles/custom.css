@@ -60,6 +60,10 @@ code.no-style {
   padding: 6rem 0;
 }
 
+.section.no-border {
+  border-top: 0;
+}
+
 .hero {
   border-top: 0;
   margin: 0 auto;

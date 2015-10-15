@@ -56,7 +56,6 @@ export default class Demo extends Component {
   render() {
     return (
       <div className="cards">
-
         <div className="card">
           <div className="card-wrapper">
             <div className="card-image">

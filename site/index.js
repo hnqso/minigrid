@@ -108,6 +108,7 @@ minigrid({
         </Container>
 
         <div className="demo">
+          <h6 className="demo-title">Places to visit before you die</h6>
           <Container>
             <div className="row">
               <div className="twelve columns">
@@ -115,10 +116,11 @@ minigrid({
               </div>
             </div>
           </Container>
+          <a href="https://www.pinterest.com/halves5/places-i-will-visit-one-day/" className="pinterest"><span>Pinterest</span></a>
         </div>
 
         <Container>
-          <div className="section">
+          <div className="section no-border">
             <div className="row">
               <div className="twelve columns">
                 <h6><a href="#install" name="install">Install</a></h6>
