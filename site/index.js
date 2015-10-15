@@ -133,6 +133,10 @@ class Site extends Component {
                 <pre><code className="prettyprint lang-bsh">$ npm install minigrid</code></pre>
                 <p>Or include the script.</p>
                 <pre><code className="prettyprint lang-html">{installMarkup}</code></pre>
+                <p><strong>Upgrade from v1?</strong></p>
+                <p>If you're using any of the releases bellow v2.0.0 please 
+                read the <a href="https://github.com/henriquea/minigrid/CHANGELOG.md">CHANGELOG</a> for 
+                API changes.</p>
               </div>
             </div>
           </div>

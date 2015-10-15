@@ -2,7 +2,7 @@
 
 ### v2.0.0
 
-The major change here is that now minigrid receives a `props` object rather arguments.
+The major change is that now minigrid receives a `props` object rather arguments.
 
 ```js
 // v1.x
