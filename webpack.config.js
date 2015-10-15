@@ -21,6 +21,10 @@ module.exports = {
       exclude: /node_modules/,
       loaders: ['babel-loader']
     }, {
+      test: /\.json?$/,
+      exclude: /node_modules/,
+      loader: 'json'
+    }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract('style-loader','css-loader')
     }, {
