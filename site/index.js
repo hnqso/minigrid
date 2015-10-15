@@ -199,7 +199,7 @@ class Site extends Component {
           <div className="section">
             <div className="row">
               <div className="twelve columns">
-                <h6><a href="#limitations" name="install">limitations</a></h6>
+                <h6><a href="#limitations" name="install">Limitations</a></h6>
                 <p>
                  Minigrid was built having in mind "cards" with same width and different heights.
                  If your cards have different width sizes or you need more control I’d recommend <a href="http://isotope.metafizzy.co">Isotope</a>.

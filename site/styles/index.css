@@ -2,6 +2,8 @@
 
 body {
   font-weight: 400;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 body,
