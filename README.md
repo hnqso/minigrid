@@ -2,7 +2,7 @@
 
 Minigrid is a minimal 2kb zero dependency cascading grid layout.
 
-Website: [http://alves.im/minigrid](http://alves.im/minigrid/).
+Website & Documentation: [http://alves.im/minigrid](http://alves.im/minigrid/).
 
 ## Limitations
 
