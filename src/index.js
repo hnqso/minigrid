@@ -30,16 +30,6 @@
   }
 
   function minigrid(props) {
-    if (loaded) {
-      init(props);
-      return;
-    }
-    window.onload = function() {
-      init(props);
-    }
-  }
-
-  function init(props) {
     var containerEle = props.container instanceof Node ?
       props.container : document.querySelector(props.container);
 
@@ -47,19 +37,34 @@
       return false;
     }
 
-    containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
-    loaded = true;
-
     var itemsNodeList = containerEle.querySelectorAll(props.item);
-    if (itemsNodeList.length === 0) {
+    if (!itemsNodeList || itemsNodeList.length === 0) {
       return false;
     }
+
+    if (loaded || props.skipWindowOnLoad) {
+      init(containerEle, itemsNodeList, props);
+      return;
+    }
+
+    window.onload = function() {
+      init(containerEle, itemsNodeList, props);
+    }
+
+  }
+
+  function init(containerEle, itemsNodeList, props) {
+
+    containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    loaded = true;
 
     var gutter = (
       typeof props.gutter === 'number' &&
       isFinite(props.gutter) &&
       Math.floor(props.gutter) === props.gutter
     ) ? props.gutter : 6;
+    var done = props.done;
+
     containerEle.style.width = '';
 
     var containerWidth = containerEle.getBoundingClientRect().width;
@@ -116,8 +121,8 @@
 
     containerEle.style.height = containerHeight + 'px';
 
-    if (typeof props.done === 'function') {
-      props.done(itemsNodeList);
+    if (typeof done === 'function') {
+      done(itemsNodeList);
     }
   }
 
