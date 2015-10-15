@@ -22,6 +22,9 @@ const NavBar = ({children}) =>
     </div>
   </div>;
 
+const installMarkup =
+`<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/minigrid/1.6.5/minigrid.min.js"></script>`;
+
 const usageHtmlMarkup =
 `<div class="grid">
   <div class="grid-item"></div>
@@ -123,7 +126,10 @@ class Site extends Component {
             <div className="row">
               <div className="twelve columns">
                 <h6><a href="#install" name="install">Install</a></h6>
+                <p>Get it from npm.</p>
                 <pre><code className="prettyprint lang-bsh">$ npm install minigrid</code></pre>
+                <p>Or include the script.</p>
+                <pre><code className="prettyprint lang-html">{installMarkup}</code></pre>
               </div>
             </div>
           </div>
@@ -137,8 +143,8 @@ class Site extends Component {
                   <code className="prettyprint lang-html">{usageHtmlMarkup}</code>
                 </pre>
                 <p>
-                  Initialize it passing two arguments: the grid container and 
-                  child items selector.
+                  Initialize it passing the <code>container</code> and <code>item</code>
+                  selector name.
                 </p>
                 <pre>
                   <code className="prettyprint lang-js">{usageJsMarkup}</code>
@@ -171,8 +177,8 @@ class Site extends Component {
                 <p>The space between items, the default is 6.</p>
 
                 <p><strong>animate</strong> <code className="no-style">function</code></p>
-                <p>It returns a function with the <code>item</code>, 
-                <code>x</code>, <code>y</code> and 
+                <p>It returns a function with the <code>item</code>,
+                <code>x</code>, <code>y</code> and
                 <code className="no-style">index</code> parameters for each child item.</p>
                 <p>See <a href="#animation">animation</a> for more information.</p>
                 <p><strong>done</strong> <code className="no-style">function</code></p>
@@ -187,7 +193,7 @@ class Site extends Component {
                 <h6><a href="#limitations" name="install">limitations</a></h6>
                 <p>
                  Minigrid was built having in mind "cards" with same width and different heights. If your
-                 cards have different width sizes or you need more control I'd
+                 cards have different width sizes or you need more control I’d
                  recommend <a href="http://isotope.metafizzy.co">Isotope</a>.
                 </p>
               </div>
@@ -198,7 +204,7 @@ class Site extends Component {
             <div className="row">
               <div className="twelve columns">
                 <h6><a href="#responsiveness" name="responsiveness">Responsiveness</a></h6>
-                <p>minigrid is dead-simple and doesn't provide anything in-the-box but you can do:</p>
+                <p>minigrid is dead-simple and doesn’t provide anything in-the-box but you can do:</p>
                 <pre>
                   <code className="prettyprint lang-js">{responsivenessMarkup}</code>
                 </pre>
@@ -211,13 +217,13 @@ class Site extends Component {
             <div className="row">
               <div className="twelve columns">
                 <h6><a href="#animation" name="animation">Animation</a></h6>
-                <p>Minigrid provide one simple way to animate the child items with CSS only. 
+                <p>Minigrid provide one simple way to animate the child items with CSS only.
                 Minigrid appends the <code>--animate</code> to your item class name.</p>
                 <pre>
                   <code className="prettyprint lang-css">{animationSimpleMarkup}</code>
                 </pre>
                 <p><a href="#" className="button">Demo</a></p>
-                <p>You may use the <code>animate</code> function to control it via JavaScript. 
+                <p>You may use the <code>animate</code> function to control it via JavaScript.
                 The example bellow is using the <a href="http://julian.com/research/velocity/">
                 Velocity.js</a> library.</p>
                 <pre>
