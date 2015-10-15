@@ -47,15 +47,36 @@
       return;
     }
 
-    (function(){
-      init(containerEle, itemsNodeList, props);
-      loaded = true;
-    })();
+    if (navigator.userAgent.toLowerCase().match(/webkit/)) {
+      setTimeout(function() {
+        webkitWaitForReadyState({
+          container: containerEle,
+          item: itemsNodeList,
+          props: props
+        });
+      }, 10);
+    } else {
+      window.onload = function() {
+        init(containerEle, itemsNodeList, props);
+      };
+    }
+
+  }
+
+  function webkitWaitForReadyState(minigrid) {
+    if (document.readyState === 'loaded' || document.readyState === 'complete') {
+      init(minigrid.container, minigrid.item, minigrid.props);
+    } else {
+      setTimeout(function() {
+        webkitWaitForReadyState(minigrid);
+      }, 10);
+    }
   }
 
   function init(containerEle, itemsNodeList, props) {
 
     containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    loaded = true;
 
     var gutter = (
       typeof props.gutter === 'number' &&
@@ -119,6 +140,7 @@
       .pop();
 
     containerEle.style.height = containerHeight + 'px';
+    //containerEle.style.minHeight = containerHeight + 'px';
 
     if (typeof done === 'function') {
       done(itemsNodeList);
