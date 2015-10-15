@@ -6,7 +6,6 @@
   "scripts": {
     "clean": "rm *.log && rm -rf dist",
     "build": "npm run clean && webpack -p --config webpack.config.dist.js --profile --colors",
-    "examples": "",
     "lint": "./node_modules/.bin/eslint --config=.eslintrc src",
     "test": "browserify tests/index.js | tape-run"
   },
