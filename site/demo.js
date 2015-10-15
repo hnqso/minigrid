@@ -50,7 +50,9 @@ export default class Demo extends Component {
     window.addEventListener('resize', function(){
       self.grid(true);
     });
-    this.grid();
+    setTimeout(function() {
+      self.grid();
+    }, 0);
   }
 
   render() {
