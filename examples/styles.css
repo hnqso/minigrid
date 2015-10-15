@@ -1,0 +1,44 @@
+/*  anything here is optional only being used for styling the cards */
+body {
+  color: #212121;
+  font-size: 13px;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #ECEFF1;
+}
+
+.demo {
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 890px;
+}
+
+.card {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  border-radius: 4px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*opacity: 0;
+  transform-origin: 50% 50%;*/
+}
+
+.card-wrapper {
+  border-radius: 4px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-info {
+  padding: 10px 16px;
+  color: rgb(33, 25, 34);
+  text-align: left;
+}
