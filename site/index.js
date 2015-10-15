@@ -136,10 +136,13 @@ class Site extends Component {
                 <pre>
                   <code className="prettyprint lang-html">{usageHtmlMarkup}</code>
                 </pre>
-                <p>Initialize it passing two arguments: the grid container and child items selector.</p>
-                  <pre>
-                    <code className="prettyprint lang-js">{usageJsMarkup}</code>
-                  </pre>
+                <p>
+                  Initialize it passing two arguments: the grid container and 
+                  child items selector.
+                </p>
+                <pre>
+                  <code className="prettyprint lang-js">{usageJsMarkup}</code>
+                </pre>
               </div>
             </div>
           </div>
@@ -168,11 +171,12 @@ class Site extends Component {
                 <p>The space between items, the default is 6.</p>
 
                 <p><strong>animate</strong> <code className="no-style">function</code></p>
-                <p>It returns a function with the <code className="no-style">item</code>, <code className="no-style">x</code>, <code className="no-style">y</code> and <code className="no-style">index</code> parameters for each child item.</p>
+                <p>It returns a function with the <code>item</code>, 
+                <code>x</code>, <code>y</code> and 
+                <code className="no-style">index</code> parameters for each child item.</p>
                 <p>See <a href="#animation">animation</a> for more information.</p>
                 <p><strong>done</strong> <code className="no-style">function</code></p>
-                <p>Callback called after the grid is built. It returns the node
-                list of grid items.</p>
+                <p>Callback called after the grid is built. It returns the <code>nodeList</code> of grid items.</p>
               </div>
             </div>
           </div>
@@ -207,12 +211,15 @@ class Site extends Component {
             <div className="row">
               <div className="twelve columns">
                 <h6><a href="#animation" name="animation">Animation</a></h6>
-                <p>Minigrid provide one simple way to animate the child items with CSS only. Minigrid appends the <code>--animate</code> to your item class name.</p>
+                <p>Minigrid provide one simple way to animate the child items with CSS only. 
+                Minigrid appends the <code>--animate</code> to your item class name.</p>
                 <pre>
                   <code className="prettyprint lang-css">{animationSimpleMarkup}</code>
                 </pre>
                 <p><a href="#" className="button">Demo</a></p>
-                <p>You may use the <code>animate</code> function to control it via JavaScript. The example bellow is using the <a href="http://julian.com/research/velocity/">Velocity.js</a> library.</p>
+                <p>You may use the <code>animate</code> function to control it via JavaScript. 
+                The example bellow is using the <a href="http://julian.com/research/velocity/">
+                Velocity.js</a> library.</p>
                 <pre>
                   <code className="prettyprint lang-js">{animationMarkup}</code>
                 </pre>
