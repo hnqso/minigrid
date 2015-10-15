@@ -12,6 +12,10 @@ module.exports = {
     path: path.join(__dirname, 'dist')
   },
 
+  plugins: [
+    new ExtractTextPlugin('styles.css')
+  ],
+
   module: {
     loaders: [{
       test: /\.html?$/,
@@ -42,14 +46,6 @@ module.exports = {
 
   eslint: {
     configFile: '.eslintrc'
-  },
-
-  resolve: {
-    modulesDirectories: ['node_modules']
-  },
-
-  plugins: [
-    new ExtractTextPlugin('styles.css')
-  ]
+  }
 
 };
