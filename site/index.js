@@ -48,17 +48,17 @@ window.addEventListener('resize', function(){
 const animationCSSMarkup =
 `.grid-item {
   opacity: 0;
-  transition: opacity .3s ease;
+  transition: opacity .3s ease-in-out;
 }
 
-.grid-item--animate {
+.grid-item--loaded {
   opacity: 1;
 }`;
 
 const animationMarkup = `/* styles.css */
 .grid-item {
   transform-origin: 50%;
-  opacity: 0;
+  opacity: 0; /* make sure the card doesn't show after loaded */
 };
 
 /* index.js */
@@ -181,8 +181,7 @@ class Site extends Component {
 
                 <p><strong>animate</strong> <code className="no-style">function</code></p>
                 <p>It returns a function with the <code>item</code>,
-                <code>x</code>, <code>y</code> and
-                <code className="no-style">index</code> parameters for each child item.</p>
+                <code>x</code>, <code>y</code> and <code>index</code> parameters for each child item.</p>
                 <p>See <a href="#animation">animation</a> for more information.</p>
                 <p><strong>done</strong> <code className="no-style">function</code></p>
                 <p>
@@ -199,8 +198,7 @@ class Site extends Component {
                 <h6><a href="#limitations" name="install">limitations</a></h6>
                 <p>
                  Minigrid was built having in mind "cards" with same width and different heights.
-                 If your cards have different width sizes or you need more control I’d recommend
-                 <a href="http://isotope.metafizzy.co">Isotope</a>.
+                 If your cards have different width sizes or you need more control I’d recommend <a href="http://isotope.metafizzy.co">Isotope</a>.
                 </p>
               </div>
             </div>
