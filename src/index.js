@@ -4,6 +4,7 @@
 
   var transformProp;
   var loaded;
+
   (function () {
     var style = document.createElement('a').style;
     var prop;
@@ -18,7 +19,7 @@
     }
   }());
 
-  function forEach (arr, cb) {
+  function forEach(arr, cb) {
     if (arr) {
       for (var i = 0, len = arr.length; i < len; i++) {
         if (arr[i]) {
@@ -28,7 +29,7 @@
     }
   }
 
-  function minigrid (props) {
+  function minigrid(props) {
     if (loaded) {
       init(props);
       return;
