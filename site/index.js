@@ -116,7 +116,7 @@ minigrid({
               </div>
             </div>
           </Container>
-          <a href="https://www.pinterest.com/halves5/places-i-will-visit-one-day/" className="pinterest"><span>Pinterest</span></a>
+          <a href="https://www.pinterest.com" className="pinterest"><span>Pinterest</span></a>
         </div>
 
         <Container>
