@@ -37,7 +37,8 @@
       return false;
     }
 
-    var itemsNodeList = containerEle.querySelectorAll(props.item);
+    var itemsNodeList = props.item instanceof NodeList ?
+      props.item : containerEle.querySelectorAll(props.item);
     if (!itemsNodeList || itemsNodeList.length === 0) {
       return false;
     }
@@ -75,14 +76,16 @@
 
   function init(containerEle, itemsNodeList, props) {
 
-    containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    if (!containerEle.className.match(/loaded/)) {
+      containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    }
     loaded = true;
 
     var gutter = (
       typeof props.gutter === 'number' &&
       isFinite(props.gutter) &&
       Math.floor(props.gutter) === props.gutter
-    ) ? props.gutter : 6;
+    ) ? props.gutter : 0;
     var done = props.done;
 
     containerEle.style.width = '';
@@ -117,7 +120,9 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
-      item.classList.add(item.className.split(' ')[0] + '--loaded');
+      if (!item.className.match(/loaded/)) {
+        item.classList.add(item.className.split(' ')[0] + '--loaded');
+      }
 
       if (!props.animate && transformProp) {
         item.style[transformProp] = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
