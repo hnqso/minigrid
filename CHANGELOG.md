@@ -1,6 +1,6 @@
 # CHANGELOG
 
-### v2.1.0
+### v2.1.3
 
 - Change default `gutter` to `0`
 - Fix issue uptading the container className with `--loaded` modifier multiple times
