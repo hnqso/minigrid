@@ -48,7 +48,7 @@
       return;
     }
 
-    if (navigator.userAgent.toLowerCase().match(/webkit/)) {
+    if (/webkit/.test(navigator.userAgent.toLowerCase())) {
       setTimeout(function() {
         webkitWaitForReadyState({
           container: containerEle,
@@ -76,7 +76,7 @@
 
   function init(containerEle, itemsNodeList, props) {
 
-    if (!containerEle.className.match(/loaded/)) {
+    if (!/loaded/.test(containerEle.className)) {
       containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
     }
     loaded = true;
@@ -120,7 +120,7 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
-      if (!item.className.match(/loaded/)) {
+      if (!/loaded/.test(item.className)) {
         item.classList.add(item.className.split(' ')[0] + '--loaded');
       }
 
