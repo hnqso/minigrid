@@ -37,7 +37,8 @@
       return false;
     }
 
-    var itemsNodeList = containerEle.querySelectorAll(props.item);
+    var itemsNodeList = props.item instanceof NodeList ?
+      props.item : containerEle.querySelectorAll(props.item);
     if (!itemsNodeList || itemsNodeList.length === 0) {
       return false;
     }
