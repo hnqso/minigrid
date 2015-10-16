@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  font-family: -apple-system-body, "Helvetica Neue", sans-serif;
 }
 
 body,
@@ -16,7 +17,7 @@ a {
 }
 
 h6 {
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
