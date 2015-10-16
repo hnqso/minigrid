@@ -26,3 +26,31 @@ test('minigrid init and get nodeList', function(t){
     }
   });
 });
+
+
+test('minigrid init with existing nodeList', function(t){
+
+  var grid = document.createElement('div');
+  grid.classList.add('grid');
+  document.body.appendChild(grid);
+
+  var numGridItems = 5;
+
+  for(var i = 0; i< numGridItems; i++){
+   var gridItem = document.createElement('div');
+    grid.appendChild(gridItem);
+  }
+
+  var gridItems = grid.querySelectorAll('div');
+
+  minigrid({
+    container: grid,
+    item: gridItems,
+    skipWindowOnLoad: true,
+    done: function(nodeList){
+      t.equal(typeof nodeList.length, 'number', 'nodeList.lenght is number');
+      t.equal(nodeList.length > 0, true, nodeList.length + ' grid items');
+      t.end();
+    }
+  });
+});
