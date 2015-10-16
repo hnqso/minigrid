@@ -2,7 +2,7 @@ import './styles/normalize.css';
 import './styles/syntax.css';
 import './styles/skeleton.css';
 import './styles/index.css';
-import './static/screenshot.jpg';
+import './static/twitter-card.jpg';
 
 import pkg from '../package.json';
 
