@@ -12,6 +12,7 @@ export default class Demo extends Component {
     minigrid({
       container: '.cards',
       item: '.card',
+      gutter: 6,
       animate: function(el, x, y, index) {
         velocity(el, {
           translateX: x + 'px',

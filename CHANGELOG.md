@@ -1,5 +1,10 @@
 # CHANGELOG
 
+### v2.1.3
+
+- Change default `gutter` to `0`
+- Fix issue uptading the container className with `--loaded` modifier multiple times
+
 ### v2.0.0
 
 The major change is that now minigrid receives a `props` object rather arguments.

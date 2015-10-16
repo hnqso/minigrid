@@ -2,6 +2,7 @@ import './styles/normalize.css';
 import './styles/syntax.css';
 import './styles/skeleton.css';
 import './styles/index.css';
+import './static/twitter-card.jpg';
 
 import pkg from '../package.json';
 
@@ -32,7 +33,11 @@ const usageHtmlMarkup =
   <div class="grid-item"></div>
 </div>`;
 
-const usageJsMarkup = `minigrid({ container: '.grid', item: '.grid-item' });`;
+const usageJsMarkup = `minigrid({
+  container: '.grid',
+  item: '.grid-item',
+  gutter: 6
+});`;
 
 const responsivenessMarkup =
 `/* styles.css */
@@ -42,7 +47,11 @@ const responsivenessMarkup =
 
 /* index.js */
 window.addEventListener('resize', function(){
-  minigrid({ container: '.grid', item: '.grid-item' });
+  minigrid({
+    container: '.grid',
+    item: '.grid-item',
+    gutter: 6
+  });
 });`;
 
 const animationCSSMarkup =
@@ -65,6 +74,7 @@ const animationMarkup = `/* styles.css */
 minigrid({
   container: '.grid',
   item: '.grid-item',
+  gutter: 6,
   animate: function(el, x, y, index) {
     // don't animate the x and y position
     velocity(el, {
@@ -149,8 +159,7 @@ class Site extends Component {
                   <code className="prettyprint lang-html">{usageHtmlMarkup}</code>
                 </pre>
                 <p>
-                  Initialize it passing the <code>container</code> and <code>item</code>
-                  selector name.
+                  Initialize it passing the <code>container</code>, <code>item</code> and <code>gutter</code>.
                 </p>
                 <pre>
                   <code className="prettyprint lang-js">{usageJsMarkup}</code>
@@ -179,7 +188,7 @@ class Site extends Component {
                 <p>The grid item element selector.</p>
 
                 <p><strong>gutter</strong> <code className="no-style">number</code></p>
-                <p>The space between items, the default is 6.</p>
+                <p>The space between items, the default is <code>0</code>.</p>
 
                 <p><strong>animate</strong> <code className="no-style">function</code></p>
                 <p>It returns a function with the <code>item</code>,
