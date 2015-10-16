@@ -75,7 +75,9 @@
 
   function init(containerEle, itemsNodeList, props) {
 
-    containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    if (!containerEle.className.match(/loaded/)) {
+      containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
+    }
     loaded = true;
 
     var gutter = (
@@ -117,7 +119,9 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
-      item.classList.add(item.className.split(' ')[0] + '--loaded');
+      if (!item.className.match(/loaded/)) {
+        item.classList.add(item.className.split(' ')[0] + '--loaded');
+      }
 
       if (!props.animate && transformProp) {
         item.style[transformProp] = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
