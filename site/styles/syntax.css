@@ -1,10 +1,10 @@
 /* GitHub Theme */
-.prettyprint {
+code.prettyprint {
   background: #fff;
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
   font-size: 1.2rem;
   padding: 2.5rem 3rem;
-  -webkit-font-smoothing: antialiased; 
+  -webkit-font-smoothing: antialiased;
 }
 
 .pln {
