@@ -47,30 +47,10 @@
       return;
     }
 
-    if (/webkit/.test(navigator.userAgent.toLowerCase())) {
-      setTimeout(function() {
-        webkitWaitForReadyState({
-          container: containerEle,
-          item: itemsNodeList,
-          props: props
-        });
-      }, 10);
-    } else {
-      window.onload = function() {
-        init(containerEle, itemsNodeList, props);
-      };
-    }
+    window.addEventListener('load', function(){
+      init(containerEle, itemsNodeList, props);
+    });
 
-  }
-
-  function webkitWaitForReadyState(minigrid) {
-    if (document.readyState === 'loaded' || document.readyState === 'complete') {
-      init(minigrid.container, minigrid.item, minigrid.props);
-    } else {
-      setTimeout(function() {
-        webkitWaitForReadyState(minigrid);
-      }, 10);
-    }
   }
 
   function init(containerEle, itemsNodeList, props) {
