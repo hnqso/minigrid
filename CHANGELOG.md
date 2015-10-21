@@ -1,5 +1,12 @@
 # CHANGELOG
 
+### v2.2.0
+
+- Add containerLoaded and itemLoaded options #37
+- Fix minification #38
+- Remove webpack
+- Remove custom `forEach` loop
+
 ### v2.1.3
 
 - Change default `gutter` to `0`
