@@ -108,6 +108,7 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
+      item.style.webkitBackfaceVisibility =  item.style.backfaceVisibility = 'hidden';
       if (props.itemLoaded) {
         item.classList.add(props.itemLoaded);
       } else if (!/loaded/.test(item.className)) {
