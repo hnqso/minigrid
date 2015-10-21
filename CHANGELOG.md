@@ -6,6 +6,7 @@
 - Fix minification #38
 - Remove webpack
 - Remove custom `forEach` loop
+- Replace custom `window.onload` function for `window.addEventListener('load')`. Closes #36
 
 ### v2.1.3
 
