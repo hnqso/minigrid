@@ -7,6 +7,7 @@
 - Remove webpack
 - Remove custom `forEach` loop
 - Replace custom `window.onload` function for `window.addEventListener('load')`. Closes #36
+- Add `backface-visibility` to prevent text rendering issues
 
 ### v2.1.3
 
