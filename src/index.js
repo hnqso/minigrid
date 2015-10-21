@@ -43,6 +43,14 @@
       return false;
     }
 
+    if (!props.containerLoaded || typeof props.containerLoaded !== 'string') {
+      props.containerLoaded = false;
+    }
+
+    if (!props.containerLoaded || typeof props.itemLoaded !== 'string') {
+      props.itemLoaded = false;
+    }
+
     if (loaded || props.skipWindowOnLoad) {
       init(containerEle, itemsNodeList, props);
       return;
@@ -75,10 +83,12 @@
   }
 
   function init(containerEle, itemsNodeList, props) {
-
-    if (!/loaded/.test(containerEle.className)) {
+    if (props.containerLoaded) {
+      containerEle.classList.add(props.containerLoaded);
+    } else if (!/loaded/.test(containerEle.className)) {
       containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
     }
+
     loaded = true;
 
     var gutter = (
@@ -120,7 +130,9 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
-      if (!/loaded/.test(item.className)) {
+      if (props.itemLoaded) {
+        item.classList.add(props.itemLoaded);
+      } else if (!/loaded/.test(item.className)) {
         item.classList.add(item.className.split(' ')[0] + '--loaded');
       }
 
