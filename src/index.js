@@ -1,3 +1,4 @@
+/* @license minigrid v2.2.0 – minimal cascading grid layout http://alves.im/minigrid */
 (function (exports) {
 
   'use strict';
@@ -18,16 +19,6 @@
       transformProp = prop;
     }
   }());
-
-  function forEach(arr, cb) {
-    if (arr) {
-      for (var i = 0, len = arr.length; i < len; i++) {
-        if (arr[i]) {
-          cb(arr[i], i, arr);
-        }
-      }
-    }
-  }
 
   function minigrid(props) {
     var containerEle = props.container instanceof Node ?
@@ -100,6 +91,7 @@
 
     containerEle.style.width = '';
 
+    var forEach = Array.prototype.forEach;
     var containerWidth = containerEle.getBoundingClientRect().width;
     var firstChildWidth = itemsNodeList[0].getBoundingClientRect().width + gutter;
     var cols = Math.max(Math.floor((containerWidth - gutter) / firstChildWidth), 1);
@@ -117,7 +109,7 @@
       itemsGutter.push(gutter);
     }
 
-    forEach(itemsNodeList, function (item) {
+    forEach.call(itemsNodeList, function (item) {
       var itemIndex = itemsGutter
         .slice(0)
         .sort(function (a, b) {
@@ -157,7 +149,6 @@
       .pop();
 
     containerEle.style.height = containerHeight + 'px';
-    //containerEle.style.minHeight = containerHeight + 'px';
 
     if (typeof done === 'function') {
       done(itemsNodeList);
