@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist/minigrid.min.js",
-    "build": "npm run clean && npm run test && npm run uglify",
+    "build": "npm run clean && npm run lint && npm run test && npm run uglify",
     "lint": "./node_modules/.bin/eslint --config=.eslintrc src",
     "test": "browserify tests/index.js | tape-run",
     "uglify": "uglifyjs --comments -m -c -o dist/minigrid.min.js src/index.js"
