@@ -47,9 +47,15 @@
       return;
     }
 
-    window.addEventListener('load', function(){
-      init(containerEle, itemsNodeList, props);
-    });
+    if (/webkit/.test(navigator.userAgent.toLowerCase())) {
+      window.addEventListener('load', function(){
+        init(containerEle, itemsNodeList, props);
+      });
+    } else {
+      window.onload = function() {
+        init(containerEle, itemsNodeList, props);
+      };
+    }
 
   }
 
