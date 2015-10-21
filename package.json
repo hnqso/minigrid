@@ -1,16 +1,17 @@
 {
   "name": "minigrid",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "src/index.js",
   "files": [
     "src/index.js"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
-    "build": "npm run clean && webpack -p --config webpack.config.dist.js --profile --colors",
+    "clean": "rm -rf dist/minigrid.min.js",
+    "build": "npm run clean && npm run test && npm run uglify",
     "lint": "./node_modules/.bin/eslint --config=.eslintrc src",
-    "test": "browserify tests/index.js | tape-run"
+    "test": "browserify tests/index.js | tape-run",
+    "uglify": "uglifyjs --comments -m -c -o dist/minigrid.min.js src/index.js"
   },
   "repository": {
     "type": "git",
@@ -47,8 +48,6 @@
     "phantomjs": "1.9.2-6",
     "tape": "^4.0.2",
     "tape-run": "^1.1.0",
-    "url-loader": "^0.5.6",
-    "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0"
+    "url-loader": "^0.5.6"
   }
 }
