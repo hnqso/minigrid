@@ -1,3 +1,4 @@
+/* @license minigrid v2.2.0 – minimal cascading grid layout http://alves.im/minigrid */
 (function (exports) {
 
   'use strict';
@@ -19,16 +20,6 @@
     }
   }());
 
-  function forEach(arr, cb) {
-    if (arr) {
-      for (var i = 0, len = arr.length; i < len; i++) {
-        if (arr[i]) {
-          cb(arr[i], i, arr);
-        }
-      }
-    }
-  }
-
   function minigrid(props) {
     var containerEle = props.container instanceof Node ?
       props.container : document.querySelector(props.container);
@@ -43,19 +34,23 @@
       return false;
     }
 
+    if (!props.containerLoaded || typeof props.containerLoaded !== 'string') {
+      props.containerLoaded = false;
+    }
+
+    if (!props.containerLoaded || typeof props.itemLoaded !== 'string') {
+      props.itemLoaded = false;
+    }
+
     if (loaded || props.skipWindowOnLoad) {
       init(containerEle, itemsNodeList, props);
       return;
     }
 
     if (/webkit/.test(navigator.userAgent.toLowerCase())) {
-      setTimeout(function() {
-        webkitWaitForReadyState({
-          container: containerEle,
-          item: itemsNodeList,
-          props: props
-        });
-      }, 10);
+      window.addEventListener('load', function(){
+        init(containerEle, itemsNodeList, props);
+      });
     } else {
       window.onload = function() {
         init(containerEle, itemsNodeList, props);
@@ -64,21 +59,13 @@
 
   }
 
-  function webkitWaitForReadyState(minigrid) {
-    if (document.readyState === 'loaded' || document.readyState === 'complete') {
-      init(minigrid.container, minigrid.item, minigrid.props);
-    } else {
-      setTimeout(function() {
-        webkitWaitForReadyState(minigrid);
-      }, 10);
-    }
-  }
-
   function init(containerEle, itemsNodeList, props) {
-
-    if (!/loaded/.test(containerEle.className)) {
+    if (props.containerLoaded) {
+      containerEle.classList.add(props.containerLoaded);
+    } else if (!/loaded/.test(containerEle.className)) {
       containerEle.classList.add(containerEle.className.split(' ')[0] + '--loaded');
     }
+
     loaded = true;
 
     var gutter = (
@@ -90,6 +77,7 @@
 
     containerEle.style.width = '';
 
+    var forEach = Array.prototype.forEach;
     var containerWidth = containerEle.getBoundingClientRect().width;
     var firstChildWidth = itemsNodeList[0].getBoundingClientRect().width + gutter;
     var cols = Math.max(Math.floor((containerWidth - gutter) / firstChildWidth), 1);
@@ -107,7 +95,7 @@
       itemsGutter.push(gutter);
     }
 
-    forEach(itemsNodeList, function (item) {
+    forEach.call(itemsNodeList, function (item) {
       var itemIndex = itemsGutter
         .slice(0)
         .sort(function (a, b) {
@@ -120,7 +108,10 @@
       var posY = itemsGutter[itemIndex];
 
       item.style.position = 'absolute';
-      if (!/loaded/.test(item.className)) {
+      item.style.webkitBackfaceVisibility =  item.style.backfaceVisibility = 'hidden';
+      if (props.itemLoaded) {
+        item.classList.add(props.itemLoaded);
+      } else if (!/loaded/.test(item.className)) {
         item.classList.add(item.className.split(' ')[0] + '--loaded');
       }
 
@@ -145,7 +136,6 @@
       .pop();
 
     containerEle.style.height = containerHeight + 'px';
-    //containerEle.style.minHeight = containerHeight + 'px';
 
     if (typeof done === 'function') {
       done(itemsNodeList);
