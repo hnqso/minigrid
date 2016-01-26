@@ -57,6 +57,12 @@
       };
     }
 
+    if (typeof(Turbolinks) == 'object') {
+      window.addEventListener('page:load', function () {
+        init(containerEle, itemsNodeList, props);
+      });
+    }
+
   }
 
   function init(containerEle, itemsNodeList, props) {
