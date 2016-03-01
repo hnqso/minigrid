@@ -1,5 +1,7 @@
 # CHANGELOG
 
+### v3.0.0
+
 ### v2.2.0
 
 - Add containerLoaded and itemLoaded options #37

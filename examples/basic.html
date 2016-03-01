@@ -17,11 +17,6 @@
       .card {
         width: 200px;
         overflow: hidden;
-        opacity: 0; /* hide card while loading */
-      }
-
-      .card--loaded {
-        opacity: 1;
       }
     </style>
 
@@ -148,13 +143,14 @@
 
     <script src="../src/index.js"></script>
     <script>
-      (function(){
-        minigrid({
+      window.onload = function(){
+        var grid = new minigrid({
           container: '.cards',
           item: '.card',
           gutter: 6
         });
-      })();
+        grid.mount();
+      };
     </script>
 
   </body>
