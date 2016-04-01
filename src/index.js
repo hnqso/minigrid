@@ -104,9 +104,9 @@
         .shift();
       itemIndex = itemsGutter.indexOf(itemIndex);
 
-      var posX = itemsPosX[itemIndex];
-      var posY = itemsGutter[itemIndex];
-
+      var posX = Math.round(itemsPosX[itemIndex]);
+      var posY = Math.round(itemsGutter[itemIndex]);
+      
       item.style.position = 'absolute';
       item.style.webkitBackfaceVisibility =  item.style.backfaceVisibility = 'hidden';
       if (props.itemLoaded) {
