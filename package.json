@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "files": [
     "src/index.js",
-    "dist/minigrid.min.js"
+    "src/minigrid.umd.js"
   ],
   "scripts": {
     "clean": "rm -rf umd/minigrid.umd.js",
