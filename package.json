@@ -1,10 +1,11 @@
 {
   "name": "minigrid",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "src/index.js",
   "files": [
-    "src/index.js"
+    "src/index.js",
+    "dist/minigrid.min.js"
   ],
   "scripts": {
     "clean": "rm -rf dist/minigrid.min.js",
