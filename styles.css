@@ -107,3 +107,16 @@ ul:last-child > li:last-child {
   margin-left: auto;
   margin-right: 0;
 }
+
+@media (max-width: 600px) {
+  ul:first-child {
+    text-align: left;
+  }
+  ul:last-child {
+    flex-direction: column;
+  }
+
+  ul:last-child > li:last-child {
+    margin: 24px 0 0 0;
+  }
+}
