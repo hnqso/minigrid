@@ -46,7 +46,7 @@ npm install minigrid
 
 Upgrading from v1.x or v2.x?
 
-Please read the [CHANGELOG](https://github.com/henriquea/minigrid/blob/master/CONTRIBUTING.md) for API changes.
+Please read the [CHANGELOG](https://github.com/henriquea/minigrid/blob/master/CHANGELOG.md) for API changes.
 
 ## Limitations
 
