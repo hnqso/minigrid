@@ -1,17 +1,18 @@
 {
   "name": "minigrid",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Minimal 2kb zero dependency cascading grid layout",
   "main": "src/index.js",
   "files": [
-    "src/index.js"
+    "src/index.js",
+    "dist/minigrid.min.js"
   ],
   "scripts": {
-    "clean": "rm -rf dist/minigrid.min.js",
+    "clean": "rm -rf umd/minigrid.umd.js",
     "build": "npm run clean && npm run lint && npm run test && npm run uglify",
     "lint": "./node_modules/.bin/eslint --config=.eslintrc src",
     "test": "browserify tests/index.js | tape-run",
-    "uglify": "uglifyjs --comments -m -c -o dist/minigrid.min.js src/index.js"
+    "uglify": "uglifyjs --comments -m -c -o src/minigrid.umd.js src/index.js"
   },
   "repository": {
     "type": "git",

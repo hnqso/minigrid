@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.0.1
+
+- Remove dist folder
+
 ### v3.0.0
 
 The major change is the API. We took one step back to its core principle of "keep it simple".
