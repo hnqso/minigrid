@@ -1,12 +1,13 @@
-/* @license minigrid v3.0.0 – minimal cascading grid layout http://alves.im/minigrid */
+/* @license Minigrid v3.0.0 – minimal cascading grid layout http://alves.im/minigrid */
 (function (root, factory) {
-  if (typeof exports === 'object') {
-    factory(exports);
-  } else if (typeof define === 'function' && define.amd) {
-    define(['exports'], factory);
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
   } else {
-    factory(root);
+    root.Minigrid = factory();
   }
+
 }(this, function(exports){
   'use strict';
 
@@ -19,22 +20,15 @@
     return a;
   }
 
-  var minigrid = function(props) {
+  var Minigrid = function(props) {
     var containerEle = props.container instanceof Node ? (
       props.container
     ) : (
       document.querySelector(props.container)
     );
 
-    if (!containerEle) {
-      return false;
-    }
-
     var itemsNodeList = props.item instanceof NodeList ?
       props.item : containerEle.querySelectorAll(props.item);
-    if (!itemsNodeList || itemsNodeList.length === 0) {
-      return false;
-    }
 
     this.props = extend(props, {
       container: containerEle,
@@ -43,7 +37,13 @@
 
   }
 
-  minigrid.prototype.mount = function() {
+  Minigrid.prototype.mount = function() {
+    if (!this.props.container) {
+      return false;
+    }
+    if (!this.props.nodeList || this.props.nodeList.length === 0) {
+      return false;
+    }
     var gutter = (
       typeof this.props.gutter === 'number' &&
       isFinite(this.props.gutter) &&
@@ -68,7 +68,6 @@
 
     var itemsGutter = [];
     var itemsPosX = [];
-    var context = this;
 
     for ( var g = 0 ; g < cols ; ++g ) {
       itemsPosX.push(g * firstChildWidth + gutter);
@@ -84,22 +83,17 @@
         .shift();
       itemIndex = itemsGutter.indexOf(itemIndex);
 
-      var posX = itemsPosX[itemIndex];
-      var posY = itemsGutter[itemIndex];
+      var posX = parseInt(itemsPosX[itemIndex]);
+      var posY = parseInt(itemsGutter[itemIndex]);
 
       item.style.position = 'absolute';
+      item.style.overflow = 'hidden';
       item.style.webkitBackfaceVisibility = item.style.backfaceVisibility = 'hidden';
-
-      if (!context.props.animate) {
-        item.style.transform = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
-      }
+      item.style.transformStyle = 'preserve-3d';
+      item.style.transform = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
 
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
       count = count + 1;
-
-      if (context.props.animate) {
-        return context.props.animate(item, posX, posY, count);
-      }
 
     });
 
@@ -117,7 +111,6 @@
     }
   }
 
-  exports.minigrid = minigrid;
-  return minigrid;
+  return Minigrid;
 
 }));

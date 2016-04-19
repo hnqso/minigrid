@@ -2,6 +2,26 @@
 
 ### v3.0.0
 
+The major change is the API. We took one step back to its core principle of "keep it simple".
+
+```js
+var props = {
+  container: '.cards',
+  item: '.card',
+  guter: 8
+};
+var grid = new Minigrid(props);
+grid.mount();
+```
+
+– Back to 2kb 🎉
+- `mount()` method to initialize Minigrid
+- Animation was removed due to issues when dealing with many items which is the most of the user cases
+- Remove the custom loading causing issues when loaded with require
+- Round `posX`, `poxY` values #48
+- Fixes the issue when working with multiple grids/selectors #43
+- Works when loaded via module #40
+
 ### v2.2.0
 
 - Add containerLoaded and itemLoaded options #37
