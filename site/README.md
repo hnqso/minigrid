@@ -36,12 +36,6 @@ Get it from <strong>npm</strong>.
 npm install minigrid
 ```
 
-Or 1998 script include tag from **npmcdn**.
-
-```
-npm install minigrid
-```
-
 ## Upgrade
 
 Upgrading from v1.x or v2.x?
