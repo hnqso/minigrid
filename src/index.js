@@ -1,4 +1,4 @@
-/* @license Minigrid v3.0.1 – minimal cascading grid layout http://alves.im/minigrid */
+/* @license Minigrid v3.0.0 – minimal cascading grid layout http://alves.im/minigrid */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(factory);
