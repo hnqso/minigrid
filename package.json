@@ -1,24 +1,64 @@
 {
+<<<<<<< HEAD
   "name": "minigrid-site",
   "version": "0.0.0",
   "description": "Minigrid site",
   "scripts": {
     "build": "node build.js"
+=======
+  "name": "minigrid",
+  "version": "3.0.0",
+  "description": "Minimal 2kb zero dependency cascading grid layout",
+  "main": "src/index.js",
+  "files": [
+    "src/index.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist/minigrid.min.js",
+    "build": "npm run clean && npm run lint && npm run test && npm run uglify",
+    "lint": "./node_modules/.bin/eslint --config=.eslintrc src",
+    "test": "browserify tests/index.js | tape-run",
+    "uglify": "uglifyjs --comments -m -c -o dist/minigrid.min.js src/index.js"
+>>>>>>> next
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/henriquea/minigrid.git"
   },
+<<<<<<< HEAD
+=======
+  "keywords": [
+    "min",
+    "mini",
+    "grid",
+    "minigrid",
+    "cascading",
+    "layout",
+    "javascript",
+    "minimal",
+    "responsive",
+    "masonry"
+  ],
+  "author": "Henrique Alves <henriquea@gmail.com> (http://alves.im)",
+>>>>>>> next
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/henriquea/minigrid/issues"
   },
   "homepage": "http://alves.im/minigrid",
   "devDependencies": {
+<<<<<<< HEAD
     "ejs": "^2.4.1",
     "html-minifier": "^2.0.0",
     "remark": "^4.2.1",
     "remark-html": "^3.0.0",
     "remark-yaml-config": "^3.0.0"
+=======
+    "browserify": "^11.0.1",
+    "eslint": "^1.4.3",
+    "phantomjs": "1.9.2-6",
+    "tape": "^4.0.2",
+    "tape-run": "^1.1.0"
+>>>>>>> next
   }
 }

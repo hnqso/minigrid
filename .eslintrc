@@ -1,0 +1,22 @@
+// http://eslint.org/docs/rules
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "strict": 0,
+    "quotes": [2, "single"],
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": 0,
+    "new-cap": 0,
+    "no-extra-boolean-cast": 0,
+    "yoda": 0,
+    "no-empty": 0,
+    "no-use-before-define": 0,
+    "camelcase": 0
+  },
+  "globals": {
+    "define": true
+  }
+}
