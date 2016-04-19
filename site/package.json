@@ -2,10 +2,8 @@
   "name": "minigrid-site",
   "version": "0.0.0",
   "description": "Minigrid site",
-  "main": "index.js",
   "scripts": {
-    "build": "node build.js",
-    "deploy": "npm run build; ./node_modules/@linclark/github-pages-deploy/bin/github-pages.js deploy"
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +20,5 @@
     "remark": "^4.2.1",
     "remark-html": "^3.0.0",
     "remark-yaml-config": "^3.0.0"
-  },
-  "dependencies": {
-    "@linclark/github-pages-deploy": "^2.0.0"
   }
 }
