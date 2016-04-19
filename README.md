@@ -36,6 +36,12 @@ Get it from <strong>npm</strong>.
 npm install minigrid
 ```
 
+Or 1998 script tag from **npmcdn**:
+
+```
+<script src="https://npmcdn.com/minigrid@3.0.1/dist/minigrid.min.js"></script>
+```
+
 ## Upgrade
 
 Upgrading from v1.x or v2.x?
@@ -44,9 +50,9 @@ Please read the [CHANGELOG](https://github.com/henriquea/minigrid/blob/master/CH
 
 ## Limitations
 
-Minigrid was built having in mind "cards" with same width and different heights. If your cards have different width sizes or you need more power I’d recommend [Isotope](http://isotope.metafizzy.co/).
+Minigrid was built having in mind "cards" with same width and different heights. If your cards have different width sizes or you need more power I would recommend [Isotope](http://isotope.metafizzy.co/).
 
-- **Minigrid** v3.0.0
+- **Minigrid** v3.0.1
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
 - [@healves82](https://twitter.com/healves82)
