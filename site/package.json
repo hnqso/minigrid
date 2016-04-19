@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node build.js",
-    "git-commit": "git add -A .;git commit -a -m 'gh-pages update'",
-    "git-push": "git push origin gh-pages --force;git checkout master",
-    "deploy": "npm run build;npm run git-commit;npm run git-push"
+    "deploy": "npm run build; ./node_modules/@linclark/github-pages-deploy/bin/github-pages.js deploy"
   },
   "repository": {
     "type": "git",
@@ -24,5 +22,8 @@
     "remark": "^4.2.1",
     "remark-html": "^3.0.0",
     "remark-yaml-config": "^3.0.0"
+  },
+  "dependencies": {
+    "@linclark/github-pages-deploy": "^2.0.0"
   }
 }
