@@ -14,7 +14,7 @@ var grid = new Minigrid(props);
 grid.mount();
 ```
 
-- Back to 2kb 🎉
+– Back to 2kb 🎉
 - `mount()` method to initialize Minigrid
 - Animation was removed due to issues when dealing with many items which is the most of the user cases
 - Remove the custom loading causing issues when loaded with require
