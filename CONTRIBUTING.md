@@ -2,11 +2,11 @@
 
 Bare in mind that minigrid's main concept is simplicity. The goal is to keep the API always at 2kb. Bug fixes are more than welcome! For any new feature please [submit an issue](https://github.com/henriquea/minigrid/issues) first before send any pull request.
 
-Thank you all! 🍺
+🍺
 
 ## Tests
 
-All commits need pass the tests `npm run test`.
+All commits must pass the tests `npm run test`.
 
 Install browserify and testling globally.
 

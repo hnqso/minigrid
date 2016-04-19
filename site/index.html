@@ -1,37 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charSet="UTF-8">
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@healves82">
-    <meta name="twitter:creator" content="@healves82">
-    <meta name="twitter:title" content="Minigrid: Minimal 2kb zero dependency cascading grid layout">
-    <meta name="twitter:description" content="Minigrid is a minimal javascript 2kb zero dependency cascading grid layout">
-    <meta name="twitter:image" content="http://alves.im/minigrid/twitter-card.jpg">
-    <meta name="og:url" content="http://alves.im/minigrid">
-    <meta name="og:title" content="Minigrid: Minimal 2kb zero dependency cascading grid layout">
-    <meta name="og:description" content="Minigrid is a minimal javascript 2kb zero dependency cascading grid layout">
-    <meta name="og:image" content="http://alves.im/minigrid/assets/twitter-card.jpg">
-
-    <title>Minigrid &ndash; Minimal 2kb zero dependency cascading grid layout</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-58573505-3', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-    <script src="bundle.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="description" content="Minigrid: Minimal 2kb zero dependency cascading grid layout"><meta name="keywords" content="minigrid,minimal,layout,cascading,masonry,javascript"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Minigrid</title><link rel="stylesheet" href="https://npmcdn.com/normalize.css@4.1.1/normalize.css" type="text/css"><link rel="stylesheet" href="styles.css" type="text/css"></head><body><div class="container"><ul><li><a href="https://github.com/henriquea/minigrid">GitHub</a></li><li><a href="https://www.npmjs.com/package/minigrid">npm</a></li></ul><h1>Minigrid</h1><p>Minimal 2kb zero dependency cascading grid layout without pain.</p><h2>Usage</h2><p>It works on a grid container with a group of grid items.</p><pre><code>&lt;div class=&quot;cards&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>Then:</p><pre><code>var grid = new Minigrid({
+  container: &#x27;.cards&#x27;,
+  item: &#x27;.card&#x27;,
+  gutter: 6
+});
+grid.mount();
+</code></pre><h2>Installation</h2><p>Get it from <strong>npm</strong>.</p><pre><code>npm install minigrid
+</code></pre><p>Or 1998 script include tag from <strong>npmcdn</strong>.</p><pre><code>npm install minigrid
+</code></pre><h2>Upgrade</h2><p>Upgrading from v1.x or v2.x?</p><p>Please read the <a href="https://github.com/henriquea/minigrid/blob/master/CONTRIBUTING.md">CHANGELOG</a> for API changes.</p><h2>Limitations</h2><p>Minigrid was built having in mind &quot;cards&quot; with same width and different heights. If your cards have different width sizes or you need more power I&rsquo;d recommend <a href="http://isotope.metafizzy.co/">Isotope</a>.</p><ul><li><strong>Minigrid</strong> v3.0.0</li><li><a href="https://github.com/henriquea/minigrid">GitHub</a></li><li><a href="https://www.npmjs.com/package/minigrid">npm</a></li><li><a href="#">@healves82</a></li></ul></div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-58573505-3', 'auto'); ga('send', 'pageview');</script></body></html>
