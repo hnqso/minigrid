@@ -7,7 +7,7 @@
 
 Minimal 2kb zero dependency cascading grid layout without pain.
 
-<p><a class="github-button" href="https://github.com/henriquea/minigrid" data-style="mega" data-count-href="/henriquea/minigrid/stargazers" data-count-api="/repos/henriquea/minigrid#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star henriquea/minigrid on GitHub">Star Project</a></p>
+<p><a class="github-button" href="https://github.com/henriquea/minigrid" data-style="mega" data-count-href="/henriquea/minigrid/stargazers" data-count-api="/repos/henriquea/minigrid#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star henriquea/minigrid on GitHub">Star</a></p>
 
 ## Demo
 
