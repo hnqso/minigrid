@@ -36,7 +36,7 @@ Get it from <strong>npm</strong>.
 npm install minigrid
 ```
 
-Or 1998 script tag from **npmcdn**:
+Or 1998 script tag from [npmcdn](https://npmcdn.com/minigrid@3.0.1/dist/minigrid.min.js):
 
 ```
 <script src="https://npmcdn.com/minigrid@3.0.1/dist/minigrid.min.js"></script>
