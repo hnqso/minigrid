@@ -1,6 +1,8 @@
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
 
+![Minigrid](logo.svg)
+
 # Minigrid
 
 Minimal 2kb zero dependency cascading grid layout without pain.

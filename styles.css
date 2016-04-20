@@ -27,7 +27,7 @@ h1 {
 }
 
 h1:first-of-type {
-  margin-top: 72px;
+  margin-top: 24px;
 }
 
 h2 {
@@ -42,6 +42,12 @@ p {
   margin: 24px 0;
   position: relative;
   top: 6px;
+}
+
+/* logo */
+p:first-of-type{
+  margin: 0;
+  line-height: 0;
 }
 
 ul > li {
