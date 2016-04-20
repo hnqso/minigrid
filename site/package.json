@@ -4,7 +4,7 @@
   "description": "Minigrid site",
   "scripts": {
     "build": "node build.js",
-    "gh-pages": "git-directory-deploy --branch gh-pages",
+    "gh-pages": "git-directory-deploy --directory . --branch gh-pages",
     "deploy": "npm run build && npm run gh-pages"
   },
   "keywords": [],

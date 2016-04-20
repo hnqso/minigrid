@@ -1,7 +1,7 @@
 var path = require('path');
 var fs = require('fs');
 var pkg = require('./package.json');
-var markdownFile = fs.readFileSync('./index.md', 'utf8');
+var markdownFile = fs.readFileSync('./README.md', 'utf8');
 var templateFile = fs.readFileSync('./template.hbs', 'utf8');
 
 var Handlebars = require('handlebars');
