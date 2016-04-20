@@ -16,8 +16,8 @@ body {
   font-family: -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-body.baseline {
-  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 23px, #e0e0e0 23px, #e0e0e0 24px);
+body.debug {
+  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 23px, #DBE2EF 23px, #DBE2EF 24px);
 }
 
 h1 {
@@ -119,10 +119,10 @@ ul:last-child > li:last-child {
     text-align: left;
   }
   ul:last-child {
-    flex-direction: column;
+    display: block;
   }
-
   ul:last-child > li:last-child {
     margin: 24px 0 0 0;
+    display: block;
   }
 }

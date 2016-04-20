@@ -52,6 +52,10 @@ Please read the [CHANGELOG](https://github.com/henriquea/minigrid/blob/master/CH
 
 Minigrid was built having in mind "cards" with same width and different heights. If your cards have different width sizes or you need more power I would recommend [Isotope](http://isotope.metafizzy.co/).
 
+## Questions
+
+Open an [issue](https://github.com/henriquea/minigrid/issues) or hit me on [Twitter](https://twitter.com/?status=@healves82).
+
 - **Minigrid** v3.0.1
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
