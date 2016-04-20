@@ -56,7 +56,7 @@ Minigrid was built having in mind "cards" with same width and different heights.
 
 Open an [issue](https://github.com/henriquea/minigrid/issues) or hit me on [Twitter](https://twitter.com/?status=@healves82).
 
-- **Minigrid** v3.0.1
+- [Minigrid](http://alves.im/minigrid) v3.0.1
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
 - [@healves82](https://twitter.com/healves82)
