@@ -45,7 +45,7 @@ p {
 }
 
 /* logo */
-p:first-of-type{
+p:first-of-type {
   margin: 0;
   line-height: 0;
 }

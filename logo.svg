@@ -1,37 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="77px" height="70px" viewBox="0 0 77 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<svg width="58px" height="53px" viewBox="-1 -1 58 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch Beta 3.7.1 (28208) - http://www.bohemiancoding.com/sketch -->
-    <title>Logo</title>
     <desc>Created with Sketch Beta.</desc>
     <defs>
-        <polygon id="path-1" points="76.595002 56.2621115 28.2437077 69.770344 0.328074956 46.5599619 48.6793692 33.5614288"></polygon>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="76.266927" height="36.2089153" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <polygon id="path-3" points="76.595002 56.2621115 28.2437077 69.770344 0.328074956 46.5599619 48.6793692 33.5614288"></polygon>
-        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="76.266927" height="36.2089153" fill="white">
-            <use xlink:href="#path-3"></use>
-        </mask>
-        <polygon id="path-5" points="76.595002 46.2621115 28.2437077 59.770344 0.328074956 36.5599619 48.6793692 23.5614288"></polygon>
-        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="76.266927" height="36.2089153" fill="white">
-            <use xlink:href="#path-5"></use>
-        </mask>
-        <polygon id="path-7" points="76.595002 33.9544192 28.2437077 47.4626517 0.328074956 24.2522696 48.6793692 11.2537365"></polygon>
-        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="76.266927" height="36.2089153" fill="white">
-            <use xlink:href="#path-7"></use>
-        </mask>
-        <polygon id="path-9" points="76.595002 23.1851884 28.2437077 36.693421 0.328074956 13.4830388 48.6793692 0.484505701"></polygon>
-        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="76.266927" height="36.2089153" fill="white">
-            <use xlink:href="#path-9"></use>
-        </mask>
+        <polygon id="path-1" points="55.705456 16.9178993 20.5408783 26.7420684 0.238599968 9.86179047 35.4031776 0.408311855"></polygon>
+        <polygon id="path-3" points="55.705456 16.9178993 20.5408783 26.7420684 0.238599968 9.86179047 35.4031776 0.408311855"></polygon>
+        <polygon id="path-5" points="55.705456 16.9178993 20.5408783 26.7420684 0.238599968 9.86179047 35.4031776 0.408311855"></polygon>
+        <polygon id="path-7" points="55.705456 16.6941231 20.5408783 26.5182921 0.238599968 9.63801425 35.4031776 0.184535636"></polygon>
+        <polygon id="path-9" points="55.705456 16.8619552 20.5408783 26.6861244 0.238599968 9.8058464 35.4031776 0.352367783"></polygon>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Logo" stroke="#FFFFFF">
-            <use id="Box1" mask="url(#mask-2)" stroke-width="10" fill="#D8D8D8" xlink:href="#path-1"></use>
-            <use id="Box2" mask="url(#mask-4)" stroke-width="4" fill="#212121" xlink:href="#path-3"></use>
-            <use id="Box3" mask="url(#mask-6)" stroke-width="4" fill="#212121" xlink:href="#path-5"></use>
-            <use id="Box4" mask="url(#mask-8)" stroke-width="4" fill="#212121" xlink:href="#path-7"></use>
-            <use id="Box5" mask="url(#mask-10)" stroke-width="4" fill="#212121" xlink:href="#path-9"></use>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1">
+            <g id="Logo">
+                <g id="Box1-Clipped" transform="translate(0.000000, 24.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <g id="Box1" mask="url(#mask-2)" stroke-width="10" stroke="#FFFFFF" fill="#D8D8D8">
+                        <polygon id="path-1" points="55.705456 16.9178993 20.5408783 26.7420684 0.238599968 9.86179047 35.4031776 0.408311855"></polygon>
+                    </g>
+                </g>
+                <g id="Box2-Clipped" transform="translate(0.000000, 24.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="path-3"></g>
+                    <g id="Box2" mask="url(#mask-4)" stroke-width="4" stroke="#FFFFFF" fill="#212121">
+                        <polygon id="path-3" points="55.705456 16.9178993 20.5408783 26.7420684 0.238599968 9.86179047 35.4031776 0.408311855"></polygon>
+                    </g>
+                </g>
+                <g id="Box3-Clipped" transform="translate(0.000000, 16.727273)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="path-5"></g>
+                    <g id="Box3" mask="url(#mask-6)" stroke-width="4" stroke="#FFFFFF" fill="#212121">
+                        <polygon id="path-5" points="55.705456 16.9178993 20.5408783 26.7420684 0.238599968 9.86179047 35.4031776 0.408311855"></polygon>
+                    </g>
+                </g>
+                <g id="Box4-Clipped" transform="translate(0.000000, 8.000000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="path-7"></g>
+                    <g id="Box4" mask="url(#mask-8)" stroke-width="4" stroke="#FFFFFF" fill="#212121">
+                        <polygon id="path-7" points="55.705456 16.6941231 20.5408783 26.5182921 0.238599968 9.63801425 35.4031776 0.184535636"></polygon>
+                    </g>
+                </g>
+                <g id="Box5-Clipped">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="path-9"></g>
+                    <g id="Box5" mask="url(#mask-10)" stroke-width="4" stroke="#FFFFFF" fill="#212121">
+                        <polygon id="path-9" points="55.705456 16.8619552 20.5408783 26.6861244 0.238599968 9.8058464 35.4031776 0.352367783"></polygon>
+                    </g>
+                </g>
+            </g>
         </g>
     </g>
 </svg>
