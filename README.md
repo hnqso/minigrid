@@ -5,6 +5,9 @@
 
 Minimal 2kb zero dependency cascading grid layout without pain.
 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/henriquea/minigrid" data-count-href="/henriquea/minigrid/stargazers" data-count-api="/repos/henriquea/minigrid#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star henriquea/minigrid on GitHub">Star</a>
+
 ## Demo
 
 There's a simple example on [jsbin](http://jsbin.com/wamele/edit?js,output).
@@ -58,7 +61,10 @@ Minigrid was built having in mind "cards" with same width and different heights.
 
 ## Questions
 
-Open an [issue](https://github.com/henriquea/minigrid/issues) or hit me on [Twitter](https://twitter.com/?status=@healves82).
+Open an [issue](https://github.com/henriquea/minigrid/issues) or hit me on Twitter.
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alves.im/minigrid" data-text="Minimal 2kb zero dependencies cascading grid layout" data-via="healves82" data-hashtags="javascript">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 - [Minigrid](http://alves.im/minigrid) v3.0.1
 - [GitHub](https://github.com/henriquea/minigrid)
