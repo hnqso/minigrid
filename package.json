@@ -1,0 +1,33 @@
+{
+  "name": "minigrid-site",
+  "version": "0.0.0",
+  "description": "Minigrid site",
+  "scripts": {
+    "build": "node build.js",
+    "gh-pages": "git-directory-deploy --directory . --branch gh-pages",
+    "deploy": "npm run build && npm run gh-pages"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Henrique Alves",
+    "email": "henriquea@gmail.com",
+    "twitter": "@healves82"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquea/minigrid.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henriquea/minigrid/issues"
+  },
+  "homepage": "http://alves.im/minigrid",
+  "devDependencies": {
+    "git-directory-deploy": "^1.5.0",
+    "handlebars": "^4.0.5",
+    "html-minifier": "^2.0.0",
+    "remark": "^4.2.1",
+    "remark-html": "^3.0.0",
+    "remark-yaml-config": "^3.0.0"
+  }
+}
