@@ -5,6 +5,10 @@
 
 Minimal 2kb zero dependency cascading grid layout without pain.
 
+## Demo
+
+There's a simple example on [jsbin](http://jsbin.com/wamele/edit?js,output).
+
 ## Usage
 
 It works on a grid container with a group of grid items.
