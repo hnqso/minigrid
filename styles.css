@@ -68,6 +68,8 @@ pre > code {
   padding: 12px;
   background: #f4f6f8;
   display: block;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .container {
@@ -109,7 +111,11 @@ ul:last-child > li:last-child {
 }
 
 @media (max-width: 600px) {
+  .container {
+    max-width: inherit;
+  }
   ul:first-child {
+    width: auto;
     text-align: left;
   }
   ul:last-child {
