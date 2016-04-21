@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.0.2
+
+- Move GitHub pages to `master` branch
+
 ### v3.0.1
 
 - Add dist file to `package.json`
