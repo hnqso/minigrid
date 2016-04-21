@@ -67,7 +67,7 @@ Open an [issue](https://github.com/henriquea/minigrid/issues) or hit me on Twitt
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alves.im/minigrid" data-text="Minimal 2kb zero dependencies cascading grid layout" data-via="healves82" data-hashtags="javascript">Tweet Project</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-- [Minigrid](http://alves.im/minigrid) v3.0.1
+- [Minigrid](http://alves.im/minigrid) v3.0.2
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
 - [@healves82](https://twitter.com/healves82)
