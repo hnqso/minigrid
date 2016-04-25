@@ -114,6 +114,7 @@ ul:last-child {
 ul:last-child > li:last-child {
   margin-left: auto;
   margin-right: 0;
+  top: 0;
 }
 
 @media (max-width: 600px) {
