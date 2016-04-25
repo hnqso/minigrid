@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.0.3
+
+- Add site to js.org
+
 ### v3.0.2
 
 - Move GitHub pages to `master` branch
