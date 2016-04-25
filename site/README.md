@@ -70,4 +70,4 @@ Open an [issue](https://github.com/henriquea/minigrid/issues) or hit me on Twitt
 - [Minigrid](http://alves.im/minigrid) v3.0.2
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
-- [@healves82](https://twitter.com/healves82)
+- <img src="https://logo.js.org/dark_horz.png" width="55"/>
