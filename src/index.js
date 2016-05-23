@@ -55,7 +55,7 @@
     var itemsNodeList = this.props.nodeList;
 
     containerEle.style.width = '';
-    containerEle.style.display = 'initial';
+    containerEle.style.display = 'block';
 
     var forEach = Array.prototype.forEach;
     var containerWidth = containerEle.getBoundingClientRect().width;
