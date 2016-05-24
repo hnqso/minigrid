@@ -1,6 +1,5 @@
 - [GitHub](https://github.com/henriquea/minigrid)
 - [npm](https://www.npmjs.com/package/minigrid)
-- [Twitter](https://www.npmjs.com/package/minigrid)
 
 ![Minigrid](logo.svg)
 
