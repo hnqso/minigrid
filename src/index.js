@@ -55,7 +55,7 @@
     var itemsNodeList = this.props.nodeList;
 
     containerEle.style.width = '';
-    containerEle.style.display = 'block';
+    containerEle.style.display = 'inline';
 
     var forEach = Array.prototype.forEach;
     var containerWidth = containerEle.getBoundingClientRect().width;
@@ -99,7 +99,7 @@
     });
 
 		containerEle.style.display = '';
-    
+
     var containerHeight = itemsGutter
       .slice(0)
       .sort(function (a, b) {
