@@ -1,6 +1,6 @@
 var path = require('path');
 var fs = require('fs');
-var pkg = require('./package.json');
+var pkg = require('../package.json');
 var markdownFile = fs.readFileSync('./README.md', 'utf8');
 var templateFile = fs.readFileSync('./template.hbs', 'utf8');
 
