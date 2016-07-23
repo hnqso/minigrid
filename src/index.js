@@ -53,10 +53,6 @@
     var done = this.props.done;
     var containerEle = this.props.container;
     var itemsNodeList = this.props.nodeList;
-
-    containerEle.style.width = '';
-    containerEle.style.display = 'inline';
-
     var forEach = Array.prototype.forEach;
     var containerWidth = containerEle.getBoundingClientRect().width;
     var firstChildWidth = itemsNodeList[0].getBoundingClientRect().width + gutter;
@@ -97,8 +93,6 @@
       count = count + 1;
 
     });
-
-		containerEle.style.display = '';
 
     var containerHeight = itemsGutter
       .slice(0)
