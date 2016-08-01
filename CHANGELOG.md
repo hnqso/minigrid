@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.0.5
+
+- Revert breaking change https://github.com/henriquea/minigrid/issues/55
+
 ### v3.0.3
 
 - Add site to js.org
