@@ -55,7 +55,6 @@
     var itemsNodeList = this.props.nodeList;
 
     containerEle.style.width = '';
-    containerEle.style.display = 'inline';
 
     var forEach = Array.prototype.forEach;
     var containerWidth = containerEle.getBoundingClientRect().width;
