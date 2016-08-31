@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.0.6
+
+- Update `npmcdn` url https://github.com/henriquea/minigrid/pull/57
+
 ### v3.0.5
 
 - Revert breaking change https://github.com/henriquea/minigrid/issues/55
