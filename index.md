@@ -44,10 +44,10 @@ Get it from <strong>npm</strong>.
 npm install minigrid
 ```
 
-Or 1998 script tag from [npmcdn](https://npmcdn.com/minigrid@{{version}}/dist/minigrid.min.js):
+Or 1998 script tag from [unpkg](https://unpkg.com/minigrid@{{version}}/dist/minigrid.min.js):
 
 ```
-<script src="https://npmcdn.com/minigrid@{{version}}/dist/minigrid.min.js"></script>
+<script src="https://unpkg.com/minigrid@{{version}}/dist/minigrid.min.js"></script>
 ```
 
 ## Upgrade
