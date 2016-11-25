@@ -1,4 +1,4 @@
-/* @license Minigrid v3.1.0 – minimal cascading grid layout http://alves.im/minigrid */
+/* @license Minigrid v3.1.1 – minimal cascading grid layout http://alves.im/minigrid */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(factory);
@@ -92,7 +92,6 @@
       var posY = parseInt(itemsGutter[itemIndex]);
 
       item.style.position = 'absolute';
-      item.style.overflow = 'hidden';
       item.style.webkitBackfaceVisibility = item.style.backfaceVisibility = 'hidden';
       item.style.transformStyle = 'preserve-3d';
       item.style.transform = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';

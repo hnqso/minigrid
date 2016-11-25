@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.1.1
+
+- Remove `overflow: hidden` https://github.com/henriquea/minigrid/issues/60
+
 ### v3.1.0
 
 - Add RTL support https://github.com/henriquea/minigrid/issues/59
