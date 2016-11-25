@@ -1,4 +1,4 @@
-/* @license Minigrid v3.0.5 – minimal cascading grid layout http://alves.im/minigrid */
+/* @license Minigrid v3.1.0 – minimal cascading grid layout http://alves.im/minigrid */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(factory);
@@ -72,6 +72,11 @@
     for ( var g = 0 ; g < cols ; ++g ) {
       itemsPosX.push(g * firstChildWidth + gutter);
       itemsGutter.push(gutter);
+    }
+
+    // RTL support
+    if (this.props.rtl) {
+      itemsPosX.reverse();
     }
 
     forEach.call(itemsNodeList, function (item) {

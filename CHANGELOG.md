@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v3.1.0
+
+- Add RTL support https://github.com/henriquea/minigrid/issues/59
+
 ### v3.0.6
 
 - Update `npmcdn` url https://github.com/henriquea/minigrid/pull/57
