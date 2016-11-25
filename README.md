@@ -10,4 +10,4 @@ Plese see [CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
 
-MIT &copy; 2016 [Henrique Alves](http://alves.im)
+MIT &copy; 2016 [Henrique Alves](http://twitter.com/healves82)
