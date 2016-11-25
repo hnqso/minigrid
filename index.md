@@ -36,6 +36,13 @@ var grid = new Minigrid({
 grid.mount();
 ```
 
+## Props
+
+- container: `string` or `Node`
+- item: `string` or `NodeList`
+- gutter: `number`
+- rtl: `boolean`
+
 ## Installation
 
 Get it from <strong>npm</strong>.
