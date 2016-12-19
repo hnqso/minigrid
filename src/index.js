@@ -101,7 +101,7 @@
 
     });
 
-		containerEle.style.display = '';
+	containerEle.style.display = '';
 
     var containerHeight = itemsGutter
       .slice(0)
