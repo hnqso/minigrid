@@ -35,6 +35,12 @@
       nodeList: itemsNodeList
     });
 
+    if (typeof(Turbolinks) == 'object') {
+      window.addEventListener('page:load', function () {
+        init(containerEle, itemsNodeList, props);
+      });
+    }
+
   }
 
   Minigrid.prototype.mount = function() {
