@@ -21,14 +21,19 @@
   }
 
   var Minigrid = function(props) {
-    var containerEle = props.container instanceof Node ? (
+    var containerEle = typeof props.container !== 'string' ? (
       props.container
     ) : (
       document.querySelector(props.container)
     );
 
-    var itemsNodeList = props.item instanceof NodeList ?
-      props.item : containerEle.querySelectorAll(props.item);
+    var itemsNodeList;
+    if (props.item) {
+      itemsNodeList = typeof props.item !== 'string' ?
+        props.item : containerEle.querySelectorAll(props.item);
+    } else {
+      itemsNodeList = containerEle.children;
+    }
 
     this.props = extend(props, {
       container: containerEle,
