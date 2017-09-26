@@ -32,7 +32,8 @@
 
     this.props = extend(props, {
       container: containerEle,
-      nodeList: itemsNodeList
+      nodeList: itemsNodeList,
+      transform: containerEle.style.transform !== undefined
     });
 
   }
@@ -79,6 +80,8 @@
       itemsPosX.reverse();
     }
 
+    var transform = this.props.transform;
+
     forEach.call(itemsNodeList, function (item) {
       var itemIndex = itemsGutter
         .slice(0)
@@ -92,9 +95,15 @@
       var posY = parseInt(itemsGutter[itemIndex]);
 
       item.style.position = 'absolute';
-      item.style.webkitBackfaceVisibility = item.style.backfaceVisibility = 'hidden';
-      item.style.transformStyle = 'preserve-3d';
-      item.style.transform = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
+      if (transform) {
+        item.style.webkitBackfaceVisibility = item.style.backfaceVisibility = 'hidden';
+        item.style.transformStyle = 'preserve-3d';
+        item.style.transform = 'translate3D(' + posX + 'px,' + posY + 'px, 0)';
+      } else {
+        item.style.top = posY + 'px';
+        item.style.left = posX + 'px';
+      }
+
 
       itemsGutter[itemIndex] += item.getBoundingClientRect().height + gutter;
       count = count + 1;
